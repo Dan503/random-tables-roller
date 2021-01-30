@@ -2,7 +2,7 @@
   "name": "random-tables-roller",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vuedx-typecheck . && vite build",
     "serve": "vite preview"
   },
