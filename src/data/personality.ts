@@ -143,7 +143,7 @@ export const personality: RollTable<d100> = [
 	},
 	{
 		roll: 36,
-		value: 'Frugal'
+		value: 'Frugal (hates spending money)'
 	},
 	{
 		roll: 37,
@@ -272,10 +272,6 @@ export const personality: RollTable<d100> = [
 	{
 		roll: 68,
 		value: 'Overly Nurturing',
-	},
-	{
-		roll: 69,
-		value: 'Paranoid',
 	},
 	{
 		roll: 69,

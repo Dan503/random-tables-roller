@@ -1,7 +1,7 @@
 import './App.css'
 import { FlexGap } from './components/FlexGap/FlexGap'
 import { RollResult } from './components/RollResult/RollResult'
-import { personality, races, sex } from './data'
+import { personality, quirks, races, sex } from './data'
 
 function App() {
 	return (
@@ -18,6 +18,7 @@ function App() {
 						tableData={personality}
 						dSize={'d100'}
 					/>
+					<RollResult label="Quirk" tableData={quirks} dSize={'d100'} />
 					<RollResult label="Age (appearance)" dSize={'d100'} />
 				</FlexGap>
 			</div>
