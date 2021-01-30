@@ -22,6 +22,7 @@ export interface Roll<dSize = d20> {
 	roll: dSize | [dSize, dSize],
 	/** The result for when this number is rolled */
 	value: string
+	actualRoll?: dSize
 }
 
 /** The typical structure of a full roll table */
