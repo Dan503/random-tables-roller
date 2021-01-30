@@ -17,12 +17,12 @@ export type d4 = 1 | 2 | 3 | 4
 export type diceName = 'd100' | 'd20' | 'd12' | 'd10' | 'd8' | 'd6' | 'd4'
 
 /** The typical structure of a roll table row */
-export interface Roll<dSize = d20, availableValues = string> {
+export interface Roll<dSize = d20> {
 	/** Single Number or a Min and Max range for a the die roll */
 	roll: dSize | [dSize, dSize],
-	/**  */
-	value: availableValues
+	/** The result for when this number is rolled */
+	value: string
 }
 
 /** The typical structure of a full roll table */
-export type RollTable<dSize = d20, availableValues = string> = Array<Roll<dSize, availableValues>>
+export type RollTable<dSize = d20> = Array<Roll<dSize>>
