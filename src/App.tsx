@@ -1,7 +1,7 @@
 import './App.css'
 import { FlexGap } from './components/FlexGap/FlexGap'
 import { RollResult } from './components/RollResult/RollResult'
-import { races, sex } from './data'
+import { personality, races, sex } from './data'
 
 function App() {
 	return (
@@ -12,6 +12,12 @@ function App() {
 				<FlexGap direction="vertical">
 					<RollResult label="Race" tableData={races} dSize={'d100'} />
 					<RollResult label="Sex" tableData={sex} dSize={'d4'} />
+					<p>Use the Fantasy Name Generator app to generate character names.</p>
+					<RollResult
+						label="Personality trait"
+						tableData={personality}
+						dSize={'d100'}
+					/>
 				</FlexGap>
 			</div>
 		</div>
