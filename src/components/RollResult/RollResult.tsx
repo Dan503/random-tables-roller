@@ -26,7 +26,7 @@ export const RollResult: component = ({ label, tableData, dSize = 'd20' }) => {
 	const handleClick = () => {
 		if (tableData) {
 			setResult(getResult(tableData, dSize))
-		} else if (result) {
+		} else {
 			const rolledNumber = roll(dSize)
 			setResult({
 				roll: rolledNumber,

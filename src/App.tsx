@@ -18,6 +18,7 @@ function App() {
 						tableData={personality}
 						dSize={'d100'}
 					/>
+					<RollResult label="Age (appearance)" dSize={'d100'} />
 				</FlexGap>
 			</div>
 		</div>
