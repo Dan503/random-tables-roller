@@ -25,3 +25,11 @@ button {
 button:hover {
 	box-shadow: 0 0 0 2px #61dafb;
 }
+
+a {
+	color: #61dafb;
+}
+
+a:visited {
+	color: plum;
+}
