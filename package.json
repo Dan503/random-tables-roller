@@ -1,0 +1,19 @@
+{
+  "name": "random-tables-roller",
+  "version": "1.0.0",
+  "description": "Personal project for quickly rolling random tables for me ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dan503/random-tables-roller.git"
+  },
+  "author": "Daniel Tonon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dan503/random-tables-roller/issues"
+  },
+  "homepage": "https://github.com/Dan503/random-tables-roller#readme"
+}
