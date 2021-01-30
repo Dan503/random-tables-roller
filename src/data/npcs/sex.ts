@@ -1,4 +1,4 @@
-import { d4, RollTable } from "../utils/utilTypes";
+import { d4, RollTable } from "../../utils/utilTypes";
 
 export const sex: RollTable<d4> = [
 	{

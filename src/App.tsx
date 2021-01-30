@@ -1,7 +1,7 @@
 import './App.css'
 import { FlexGap } from './components/FlexGap/FlexGap'
 import { RollResult } from './components/RollResult/RollResult'
-import { personality, quirks, races, sex } from './data'
+import { personality, quirks, races, sex } from './data/npcs'
 
 function App() {
 	return (

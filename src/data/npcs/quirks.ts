@@ -1,4 +1,4 @@
-import { d100, RollTable } from "../utils/utilTypes";
+import { d100, RollTable } from "../../utils/utilTypes";
 
 export const quirks: RollTable<d100> = [
 	{
