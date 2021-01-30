@@ -1,3 +1,7 @@
+.RollResult h3 {
+	margin: 0;
+}
+
 .crit {
 	font-weight: bold;
 	box-shadow: 0 0 20px #000;

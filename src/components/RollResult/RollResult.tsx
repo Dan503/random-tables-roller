@@ -37,15 +37,17 @@ export const RollResult: component = ({ label, tableData, dSize = 'd20' }) => {
 	}
 
 	return (
-		<FlexGap Elem="p">
-			<strong>{label}</strong>
-			{tableData && (
-				<span className={critClass(result?.actualRoll)}>
-					[ {result?.actualRoll} ]
-				</span>
-			)}
-			<span>{result?.value}</span>
-			<button onClick={handleClick}>Roll</button>
-		</FlexGap>
+		<div className="RollResult">
+			<FlexGap align="center">
+				<h3>{label}</h3>
+				{tableData && (
+					<span className={critClass(result?.actualRoll)}>
+						[ {result?.actualRoll} ]
+					</span>
+				)}
+				<span>{result?.value}</span>
+				<button onClick={handleClick}>Roll</button>
+			</FlexGap>
+		</div>
 	)
 }
