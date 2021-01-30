@@ -41,7 +41,7 @@ export const RollResult: component = ({ label, tableData, dSize = 'd20' }) => {
 			<FlexGap align="center">
 				<h3>{label}</h3>
 				{tableData && (
-					<span className={critClass(result?.actualRoll)}>
+					<span className={critClass(result?.actualRoll, dSize)}>
 						[ {result?.actualRoll} ]
 					</span>
 				)}

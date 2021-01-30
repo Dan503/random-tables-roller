@@ -1,36 +1,48 @@
-import { RollTable } from "../utils/utilTypes";
+import { d100, RollTable } from "../utils/utilTypes";
 
-export const races: RollTable = [
+export const races: RollTable<d100> = [
 	{
-		roll: [1, 5],
+		roll: 1,
+		value: 'Half-orc'
+	},
+	{
+		roll: [2, 40],
 		value: 'Human'
 	},
 	{
-		roll: [6, 10],
+		roll: [41, 70],
 		value: 'Dwarf'
 	},
 	{
-		roll: [11, 15],
+		roll: [71, 85],
 		value: 'Goliath'
 	},
 	{
-		roll: 16,
-		value: 'Elf'
+		roll: [86, 90],
+		value: 'Triton'
 	},
 	{
-		roll: 17,
+		roll: [91, 95],
 		value: 'Halfling'
 	},
 	{
-		roll: 18,
+		roll: 96,
+		value: 'Gnome'
+	},
+	{
+		roll: 97,
 		value: 'Tiefling'
 	},
 	{
-		roll: 19,
+		roll: 98,
 		value: 'Dragonborn'
 	},
 	{
-		roll: 20,
-		value: 'Half-orc'
-	}
+		roll: 99,
+		value: 'Half-Elf'
+	},
+	{
+		roll: 100,
+		value: 'Elf'
+	},
 ]

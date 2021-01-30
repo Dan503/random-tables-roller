@@ -8,7 +8,7 @@ function App() {
 			<div className="App-header">
 				<h1>Random Table Rollers</h1>
 				<h2>NPC Characters</h2>
-				<RollResult label="Race" tableData={races} />
+				<RollResult label="Race" tableData={races} dSize={'d100'} />
 			</div>
 		</div>
 	)
