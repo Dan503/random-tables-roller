@@ -163,7 +163,7 @@ export const quirks: RollTable<d100> = [
 	},
 	{
 		roll: 41,
-		value: 'Cursed (http://dndspeak.com/2017/12/100-curses/)'
+		value: 'Cursed (Roll on curses table)'
 	},
 	{
 		roll: 42,
