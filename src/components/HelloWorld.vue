@@ -52,9 +52,6 @@ export default defineComponent({
 	},
 	setup: () => {
 		const count = ref(0)
-		const x = () => {
-			var y = ''
-		}
 		return { count }
 	},
 })
@@ -63,6 +60,5 @@ export default defineComponent({
 <style scoped lang="scss">
 a {
 	color: #42b983;
-	background: red;
 }
 </style>

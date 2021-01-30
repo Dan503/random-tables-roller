@@ -1,16 +1,22 @@
 <template>
-	<img alt="Vue logo" src="./assets/logo.png" />
-	<HelloWorld msg="Hello Vue 3 + Vite" />
+	<RollResult :dataTable="races" label="Race" />
+	<button @click="roll()">Roll</button>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
+import RollResult from './components/RollResult.vue'
+import { races } from './data'
 
 export default defineComponent({
 	name: 'App',
+	data: () => ({
+		races,
+	}),
 	components: {
 		HelloWorld,
+		RollResult,
 	},
 })
 </script>
