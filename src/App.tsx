@@ -1,9 +1,12 @@
+import { ReactNode } from 'react'
 import './App.css'
 import { FlexGap } from './components/FlexGap/FlexGap'
 import { RollResult } from './components/RollResult/RollResult'
 import { RollTableSet } from './components/RollTableSet/RollTableSet'
+import { creatures } from './data/Arctic-encounters'
 import { personality, quirks, races, sex } from './data/npcs'
 import { curses } from './data/other'
+import { Roll } from './utils/utilTypes'
 
 function App() {
 	return (
@@ -12,8 +15,8 @@ function App() {
 				<h1>Random Table Rollers</h1>
 				<FlexGap direction="vertical">
 					<RollTableSet heading="NPC Characters">
-						<RollResult label="Race" tableData={races} dSize={'d100'} />
-						<RollResult label="Sex" tableData={sex} dSize={'d4'} />
+						<RollResult<Roll> label="Race" tableData={races} dSize={'d100'} />
+						<RollResult<Roll> label="Sex" tableData={sex} dSize={'d4'} />
 						<tr>
 							<td colSpan={4}>
 								<p>
@@ -29,6 +32,14 @@ function App() {
 						/>
 						<RollResult label="Quirk" tableData={quirks} dSize={'d100'} />
 						<RollResult label="Age (appearance)" dSize={'d100'} />
+					</RollTableSet>
+
+					<RollTableSet heading="Arctic encounter generator">
+						<RollResult<ReactNode>
+							label="Creature(s)"
+							tableData={creatures}
+							dSize={'d20'}
+						/>
 					</RollTableSet>
 
 					<RollTableSet heading="Other aspects">
