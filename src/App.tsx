@@ -10,6 +10,7 @@ import {
 } from './data/Arctic-encounters'
 import { personality, quirks, races, sex } from './data/npcs'
 import { curses } from './data/other'
+import { storms, weather } from './data/weather'
 import { Roll } from './utils/utilTypes'
 
 function App() {
@@ -54,6 +55,11 @@ function App() {
 							tableData={activityHumanoid}
 							dSize={'d12'}
 						/>
+					</RollTableSet>
+
+					<RollTableSet heading="Weather & Storms">
+						<RollResult label="Weather" tableData={weather} dSize="d20" />
+						<RollResult label="Storm" tableData={storms} dSize="d4" />
 					</RollTableSet>
 
 					<RollTableSet heading="Other aspects">
