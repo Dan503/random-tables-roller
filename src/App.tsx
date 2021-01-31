@@ -8,7 +8,7 @@ import {
 	activityBeast,
 	activityHumanoid,
 } from './data/Arctic-encounters'
-import { personality, quirks, races, sex } from './data/npcs'
+import { personality, quirks, races, sex, age } from './data/npcs'
 import { curses } from './data/other'
 import { storms, weather } from './data/weather'
 import { Roll } from './utils/utilTypes'
@@ -36,7 +36,7 @@ function App() {
 							dSize={'d100'}
 						/>
 						<RollResult label="Quirk" tableData={quirks} dSize={'d100'} />
-						<RollResult label="Age (appearance)" dSize={'d100'} />
+						<RollResult label="Age (appearance)" tableData={age} dSize="d100" />
 					</RollTableSet>
 
 					<RollTableSet heading="Arctic encounter generator">

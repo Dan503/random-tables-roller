@@ -20,6 +20,7 @@
 	border-radius: 10px;
 	padding: 3px 15px 10px;
 	border: 2px solid currentColor;
+	white-space: nowrap;
 }
 .crit-success {
 	color: lawngreen;
