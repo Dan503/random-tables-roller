@@ -70,8 +70,13 @@ function App() {
 						Personality traits and Quirks from{' '}
 						<a href="https://www.dmsguild.com/product/317982/PC-and-NPC-Creation-Tables">
 							PC and NPC Creation Tables
-						</a>{' '}
-						on DMs Guild.
+						</a>
+					</p>
+					<p>
+						Arctic activities and weather table from{' '}
+						<a href="https://www.dmsguild.com/product/332576/Arctic-Survival-House-Rules-for-Icewind-Dale">
+							Arctic Survival House Rules for Icewind Dale
+						</a>
 					</p>
 					<p>
 						Curses from{' '}
