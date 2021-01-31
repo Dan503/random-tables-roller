@@ -3,7 +3,11 @@ import './App.css'
 import { FlexGap } from './components/FlexGap/FlexGap'
 import { RollResult } from './components/RollResult/RollResult'
 import { RollTableSet } from './components/RollTableSet/RollTableSet'
-import { creatures } from './data/Arctic-encounters'
+import {
+	creatures,
+	activityBeast,
+	activityHumanoid,
+} from './data/Arctic-encounters'
 import { personality, quirks, races, sex } from './data/npcs'
 import { curses } from './data/other'
 import { Roll } from './utils/utilTypes'
@@ -39,6 +43,16 @@ function App() {
 							label="Creature(s)"
 							tableData={creatures}
 							dSize={'d20'}
+						/>
+						<RollResult<ReactNode>
+							label="Activity (Beast)"
+							tableData={activityBeast}
+							dSize={'d12'}
+						/>
+						<RollResult<ReactNode>
+							label="Activity (Humanoid)"
+							tableData={activityHumanoid}
+							dSize={'d12'}
 						/>
 					</RollTableSet>
 
