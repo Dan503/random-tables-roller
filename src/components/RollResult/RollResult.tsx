@@ -1,13 +1,13 @@
-import { FC, useState } from 'react'
+import { useState } from 'react'
 import { getResult, maxRolls, roll } from '../../utils/utilFunctions'
-import { diceName, RollTable, Roll, d100 } from '../../utils/utilTypes'
+import { diceName, Roll, d100, RollRow } from '../../utils/utilTypes'
 import './RollResult.css'
 
-type component = FC<{
+type Props<T extends RollRow> = {
 	label: string
-	tableData?: RollTable
-	dSize?: diceName
-}>
+	tableData?: Array<T>
+	dSize: diceName
+}
 
 const critClass = (
 	diceResult?: d100,
@@ -19,7 +19,11 @@ const critClass = (
 	return maxRolls[dSize] === diceResult ? 'crit crit-success' : ''
 }
 
-export const RollResult: component = ({ label, tableData, dSize = 'd20' }) => {
+export const RollResult = <T extends RollRow>({
+	label,
+	tableData,
+	dSize,
+}: Props<T>) => {
 	const [result, setResult] = useState<Roll>()
 
 	const handleClick = () => {
