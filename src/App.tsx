@@ -23,7 +23,7 @@ function App() {
 						<RollResult<Roll> label="Race" tableData={races} dSize={'d100'} />
 						<RollResult<Roll> label="Sex" tableData={sex} dSize={'d4'} />
 						<tr>
-							<td colSpan={4}>
+							<td colSpan={5}>
 								<p>
 									Use the "Fantasy Name Generator" app to generate character
 									names.

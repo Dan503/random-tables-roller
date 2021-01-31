@@ -17,7 +17,8 @@ export const RollTableSet: component = ({ heading, children }) => {
 							<th>Trait</th>
 							<th>Roll value</th>
 							<th>Result</th>
-							<th>action</th>
+							<th>Action</th>
+							<th>Table</th>
 						</tr>
 					</thead>
 					<tbody>{children}</tbody>

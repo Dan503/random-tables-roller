@@ -15,9 +15,10 @@ export const roll = <dSize extends d100 = d20>(diceName: diceName = 'd20') => {
 	return Math.ceil(Math.random() * maxRolls[diceName]) as dSize
 }
 
+export const isRollObject = (tableRow: Roll | ReactNode) => Object.keys(tableRow || {}).includes('roll')
+
 export const getResult = (tableData: Array<Roll | ReactNode>, dSize: diceName = 'd20'): Roll => {
 	const result = roll(dSize)
-	const isRollObject = Object.keys(tableData[0] || {}).includes('roll')
 
 	const findMatchingRow = (row: Roll) => {
 		if (Array.isArray(row.roll)) {
@@ -30,7 +31,7 @@ export const getResult = (tableData: Array<Roll | ReactNode>, dSize: diceName = 
 		}
 	}
 
-	if (isRollObject) {
+	if (isRollObject(tableData[0])) {
 		const matchedRow = tableData.find(row => findMatchingRow(row as Roll))
 		return {
 			...matchedRow as Roll,
