@@ -13,7 +13,7 @@ export const activityBeast = [
 	//6
 	'Burrowing in the snow',
 	//7
-	'Nesting/ about to sleep',
+	'Nesting / about to sleep',
 	//8
 	'Eating a carcass',
 	//9

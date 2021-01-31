@@ -27,7 +27,7 @@ export const quirks: RollTable<d100> = [
 	},
 	{
 		roll: 7,
-		value: 'Afraid of *element* (1 water/ 2 fire / 3 lightning / 4 forests)'
+		value: 'Afraid of *element* (1 water / 2 fire / 3 lightning / 4 forests)'
 	},
 	{
 		roll: 8,
@@ -135,7 +135,7 @@ export const quirks: RollTable<d100> = [
 	},
 	{
 		roll: 34,
-		value: 'Extremely short temper/ anger issues'
+		value: 'Extremely short temper / anger issues'
 	},
 	{
 		roll: 35,
