@@ -1,7 +1,6 @@
 import { FC, useState } from 'react'
 import { getResult, maxRolls, roll } from '../../utils/utilFunctions'
 import { diceName, RollTable, Roll, d100 } from '../../utils/utilTypes'
-import { FlexGap } from '../FlexGap/FlexGap'
 import './RollResult.css'
 
 type component = FC<{
