@@ -1,4 +1,5 @@
-import { diceName, d20, d100, RollTable, Roll } from "./utilTypes"
+import { ReactNode } from "react"
+import { diceName, d20, d100, Roll } from "./utilTypes"
 
 export const maxRolls = {
 	d100: 100,
@@ -14,18 +15,33 @@ export const roll = <dSize extends d100 = d20>(diceName: diceName = 'd20') => {
 	return Math.ceil(Math.random() * maxRolls[diceName]) as dSize
 }
 
-export const getResult = (tableData: RollTable, dSize: diceName = 'd20'): Roll => {
+export const getResult = (tableData: Array<Roll | ReactNode>, dSize: diceName = 'd20'): Roll => {
 	const result = roll(dSize)
-	const isObject = Object.keys(tableData[0] || {}).includes('roll')
-	const matchedRow = isObject ? tableData.find(
-		(row: any) => {
-			return Array.isArray(row?.roll) ? row.roll[0] <= result &&
-				row.roll[1] >= result :
-				row.roll === result
+	const isRollObject = Object.keys(tableData[0] || {}).includes('roll')
+
+	const findMatchingRow = (row: Roll) => {
+		if (Array.isArray(row.roll)) {
+			const isGreaterThanMin = row.roll[0] <= result
+			const isLessThanMax = row.roll[1] >= result
+			return isGreaterThanMin && isLessThanMax
+		} else {
+			const isEqual = row.roll === result
+			return isEqual
 		}
-	) : tableData[result - 1]
-	return {
-		...matchedRow as Roll,
-		actualRoll: result,
+	}
+
+	if (isRollObject) {
+		const matchedRow = tableData.find(row => findMatchingRow(row as Roll))
+		return {
+			...matchedRow as Roll,
+			actualRoll: result,
+		}
+
+	} else {
+		return {
+			roll: result,
+			value: tableData[result - 1],
+			actualRoll: result,
+		}
 	}
 }
