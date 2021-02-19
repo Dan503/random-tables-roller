@@ -44,7 +44,7 @@ export const creatures: Array<ReactNode> = [
 	//16
 	<a href="https://www.dndbeyond.com/monsters/ice-mephit">3 Ice Mephits</a>,
 	//17
-	<a href="https://www.dndbeyond.com/monsters/giant-owl">Giant Snow Owl</a>,
+	<a href="https://www.dndbeyond.com/monsters/axe-beak">Wild Axe Beak</a>,
 	//18
 	<a href="https://www.dndbeyond.com/sources/idrotf/appendix-c-creatures#Reindeer">
 		Reindeer
