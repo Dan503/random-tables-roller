@@ -4,9 +4,9 @@ export enum TravelMethod {
 	WALK = 'Walking',
 	SNOWSHOE = 'Snow racket shoes',
 	BIRD = 'Axe Beak',
-	DOG = 'Dog sled',
-	DEER = 'Reindeer sled',
-	BEAR = 'Polar bear sled',
+	DOG = 'Dog',
+	DEER = 'Reindeer',
+	BEAR = 'Polar bear',
 }
 
 export type TravelMethodCode =
@@ -20,6 +20,7 @@ export type TravelMethodCode =
 export const travelMethods: Array<TravelMethodCode> = ['WALK', 'SNOWSHOE', 'DOG', 'BIRD', 'DEER', 'BEAR']
 
 export interface TravelCreature {
+	travelMethodCode: TravelMethodCode
 	str: number
 	strMod: number
 	carryCapacity: CarryCapacity,
@@ -42,6 +43,7 @@ type CreatureData = {
 
 export const creatureData: CreatureData = {
 	WALK: {
+		travelMethodCode: 'WALK',
 		str: 10,
 		strMod: 0,
 		carryCapacity: generateCarryCapacity({ strengthScore: 10, isLarge: false }),
@@ -56,6 +58,7 @@ export const creatureData: CreatureData = {
 		travelTimeReduction: 0.5,
 	},
 	SNOWSHOE: {
+		travelMethodCode: 'SNOWSHOE',
 		str: 10,
 		strMod: 0,
 		carryCapacity: generateCarryCapacity({ strengthScore: 10, isLarge: false }),
@@ -70,6 +73,7 @@ export const creatureData: CreatureData = {
 		travelTimeReduction: 0,
 	},
 	DOG: {
+		travelMethodCode: 'DOG',
 		str: 12,
 		strMod: 1,
 		carryCapacity: generateCarryCapacity({ strengthScore: 12, isLarge: false }),
@@ -84,6 +88,7 @@ export const creatureData: CreatureData = {
 		travelTimeReduction: 4,
 	},
 	BIRD: {
+		travelMethodCode: 'BIRD',
 		str: 20,
 		strMod: 5,
 		carryCapacity: generateCarryCapacity({ strengthScore: 20 }),
@@ -98,6 +103,7 @@ export const creatureData: CreatureData = {
 		travelTimeReduction: 3
 	},
 	DEER: {
+		travelMethodCode: 'DEER',
 		str: 16,
 		strMod: 3,
 		carryCapacity: generateCarryCapacity({ strengthScore: 16 }),
@@ -112,6 +118,7 @@ export const creatureData: CreatureData = {
 		travelTimeReduction: 2,
 	},
 	BEAR: {
+		travelMethodCode: 'BEAR',
 		str: 30, // Officially bears have strength of 20 but it made reindeer sleds overpowered at 20 strength
 		strMod: 10,
 		carryCapacity: generateCarryCapacity({ strengthScore: 30 }),

@@ -3,6 +3,7 @@ import './App.css'
 import { FlexGap } from './components/FlexGap/FlexGap'
 import { RollResult } from './components/RollResult/RollResult'
 import { RollTableSet } from './components/RollTableSet/RollTableSet'
+import { TravelCalculator } from './components/TravelCalculator/TravelCalculator'
 import {
 	creatures,
 	activityBeast,
@@ -19,6 +20,7 @@ function App() {
 			<div className="App-inner">
 				<h1>Random Table Rollers</h1>
 				<FlexGap direction="vertical">
+					<TravelCalculator />
 					<RollTableSet heading="NPC Characters">
 						<RollResult<Roll> label="Race" tableData={races} dSize={'d100'} />
 						<RollResult<Roll> label="Sex" tableData={sex} dSize={'d4'} />

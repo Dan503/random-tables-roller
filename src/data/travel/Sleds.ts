@@ -74,10 +74,11 @@ type GetSledCreatureComboDataReturn = Array<{
 	sledCarryCapacity: CarryCapacity
 }>
 
-const getSledCreatureComboData = (creature: TravelMethodCode, props: Array<GetSledCreatureComboDataProps>): GetSledCreatureComboDataReturn => {
-	const travelCreature = creatureData[creature]
+const getSledCreatureComboData = (creatureCode: TravelMethodCode, props: Array<GetSledCreatureComboDataProps>): GetSledCreatureComboDataReturn => {
+	const travelCreature = creatureData[creatureCode]
 	return props.map(({ costToRent, sledSize, creatureCount }) =>
 	({
+		creatureCode,
 		creature: travelCreature,
 		creatureCount,
 		sled: sledData[sledSize],
