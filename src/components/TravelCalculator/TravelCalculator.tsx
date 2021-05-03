@@ -7,6 +7,11 @@ import {
 	travelMethods,
 } from '../../data/travel/Creatures'
 import { sledTravelMethodData } from '../../data/travel/Sleds'
+import {
+	onCheckboxChange,
+	onNumberInputChange,
+	onSelectChange,
+} from '../../utils/utilFunctions'
 
 type component = FC<{
 	/** Add a string of CSS classes */
@@ -25,17 +30,10 @@ export const TravelCalculator: component = ({
 	const [encomberance, setEncomberance] = useState<CarryCapacity>()
 	const [creatureCount, setCreatureCount] = useState<validCreatureCounts>(1)
 
-	const onTravelSelect = useCallback((e: ChangeEvent<HTMLSelectElement>) => {
-		setTravelMethod(e.target.value as TravelMethodCode)
-	}, [])
-	const onSledChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
-		setIsUsingSled(e.target.checked)
-	}, [])
-	const onCreatureCountChange = useCallback(
-		(e: ChangeEvent<HTMLSelectElement>) => {
-			setCreatureCount(parseInt(e.target.value) as validCreatureCounts)
-		},
-		[]
+	const onTravelSelect = onSelectChange<TravelMethodCode>(setTravelMethod)
+	const onSledChange = onCheckboxChange(setIsUsingSled)
+	const onCreatureCountChange = onNumberInputChange<validCreatureCounts>(
+		setCreatureCount
 	)
 
 	useEffect(() => {
@@ -63,25 +61,29 @@ export const TravelCalculator: component = ({
 	return (
 		<div className={className} {...restProps}>
 			<h2>Travel calculator</h2>
-			<label>
-				<span>Travel method</span>
 
-				<select
-					onChange={onCreatureCountChange}
-					title="Creature count"
-					value={creatureCount}
-				>
-					{[1, 2, 4, 6].map(value => {
-						return <option value={value}>{value}x</option>
-					})}
-				</select>
-				<select onChange={onTravelSelect} value={travelMethod}>
-					{travelMethods.map(value => {
-						const label = TravelMethod[value]
-						return <option value={value}>{label}</option>
-					})}
-				</select>
-			</label>
+			<input placeholder="Base travel hours" inputMode="numeric" type="text" />
+			<input placeholder="Inventory weight" inputMode="decimal" type="text" />
+
+			<select
+				onChange={onCreatureCountChange}
+				title="Creature count"
+				value={creatureCount}
+			>
+				{[1, 2, 4, 6].map(value => {
+					return <option value={value}>{value}x</option>
+				})}
+			</select>
+			<select
+				onChange={onTravelSelect}
+				value={travelMethod}
+				title="Travel method"
+			>
+				{travelMethods.map(value => {
+					const label = TravelMethod[value]
+					return <option value={value}>{label}</option>
+				})}
+			</select>
 			<label>
 				<span>Sled?</span>
 				<input type="checkbox" checked={isUsingSled} onChange={onSledChange} />

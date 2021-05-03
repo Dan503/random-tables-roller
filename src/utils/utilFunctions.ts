@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import { ChangeEvent, ReactNode } from "react"
 import { diceName, d20, d100, Roll } from "./utilTypes"
 
 export const maxRolls = {
@@ -44,5 +44,25 @@ export const getResult = (tableData: Array<Roll | ReactNode>, dSize: diceName = 
 			value: tableData[result - 1],
 			actualRoll: result,
 		}
+	}
+}
+
+export function onSelectChange<ReturnState>(setState: (newState: ReturnState) => void) {
+	return (e: ChangeEvent<HTMLSelectElement>) => {
+		const newValue: unknown = e.target.value
+		setState(newValue as ReturnState)
+	}
+}
+
+export function onCheckboxChange(setState: (newState: boolean) => void) {
+	return (e: ChangeEvent<HTMLInputElement>) => {
+		setState(e.target.checked)
+	}
+}
+
+export function onNumberInputChange<ReturnState = number>(setState: (newState: ReturnState) => void) {
+	return (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+		const newValue: unknown = parseFloat(e.target.value)
+		setState(newValue as ReturnState)
 	}
 }
