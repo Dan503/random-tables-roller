@@ -197,7 +197,11 @@ export const TravelCalculator: component = ({
 						value={creatureCount}
 					>
 						{[1, 2, 4, 6].map(value => {
-							return <option value={value}>{value}x</option>
+							return (
+								<option value={value} key={value}>
+									{value}x
+								</option>
+							)
 						})}
 					</select>
 					<select
@@ -207,7 +211,11 @@ export const TravelCalculator: component = ({
 					>
 						{travelMethods.map(value => {
 							const label = TravelMethod[value]
-							return <option value={value}>{label}</option>
+							return (
+								<option value={value} key={value}>
+									{label}
+								</option>
+							)
 						})}
 					</select>
 				</FlexGap>
