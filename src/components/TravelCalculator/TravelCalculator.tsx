@@ -192,7 +192,7 @@ export const TravelCalculator: component = ({
 					<label>
 						<span>Base travel hours</span>
 						<input
-							inputMode="numeric"
+							inputMode="decimal"
 							type="text"
 							value={baseTravelHours}
 							onChange={onBaseTravelHourChange}
