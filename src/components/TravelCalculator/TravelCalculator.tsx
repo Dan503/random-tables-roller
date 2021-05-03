@@ -159,8 +159,7 @@ export const TravelCalculator: component = ({
 		setCalculatedTravelHours(abbreviatedNumber(totalTravelHours))
 
 		if (restInterval) {
-			// rest for half an hour per rest interval
-			const restHours = Math.floor(totalTravelHours) / restInterval / 2
+			const restHours = Math.floor(totalTravelHours) / restInterval
 			setTotalCalculatedTravelHours(
 				abbreviatedNumber(totalTravelHours + restHours)
 			)
@@ -272,8 +271,7 @@ export const TravelCalculator: component = ({
 						{Boolean(currentCreature?.restInterval) && (
 							<>
 								<br />
-								(Creature must rest for 30 min every{' '}
-								{currentCreature?.restInterval} hours)
+								(Creature must rest every {currentCreature?.restInterval} hours)
 								<br />
 								<strong>Plus rests:</strong> {totalCalculatedTravelHours} hours
 							</>
