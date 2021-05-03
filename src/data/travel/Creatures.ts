@@ -34,6 +34,8 @@ export interface TravelCreature {
 	survivalMod: number,
 	frostCheckMod: number,
 	travelTimeReduction: number,
+	/** 1 = creature must rest every 1 hour of travel */
+	restInterval?: number
 	isLarge: boolean
 }
 
@@ -86,6 +88,7 @@ export const creatureData: CreatureData = {
 		frostCheckMod: 1,
 		isLarge: false,
 		travelTimeReduction: 4,
+		restInterval: 1,
 	},
 	BIRD: {
 		travelMethodCode: 'BIRD',
@@ -100,7 +103,8 @@ export const creatureData: CreatureData = {
 		survivalMod: 1,
 		frostCheckMod: 2,
 		isLarge: true,
-		travelTimeReduction: 3
+		travelTimeReduction: 3,
+		restInterval: 3,
 	},
 	DEER: {
 		travelMethodCode: 'DEER',

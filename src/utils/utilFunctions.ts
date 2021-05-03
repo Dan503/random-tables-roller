@@ -66,3 +66,7 @@ export function onNumberInputChange<ReturnState = number>(setState: (newState: R
 		setState(newValue as ReturnState)
 	}
 }
+
+
+export const hasDecimals = (number: number) => number % 1 !== 0
+export const abbreviatedNumber = (number: number) => hasDecimals(number) ? parseFloat(number.toFixed(2)) : number

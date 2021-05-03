@@ -2,6 +2,7 @@ import { FC, useState, useEffect } from 'react'
 import { CarryCapacity } from '../../data/travel/CarryCapacity'
 import {
 	creatureData,
+	TravelCreature,
 	TravelMethod,
 	TravelMethodCode,
 	travelMethods,
@@ -11,6 +12,7 @@ import {
 	onCheckboxChange,
 	onNumberInputChange,
 	onSelectChange,
+	abbreviatedNumber,
 } from '../../utils/utilFunctions'
 import { FlexGap } from '../FlexGap/FlexGap'
 
@@ -65,6 +67,7 @@ export const TravelCalculator: component = ({
 	...restProps
 }) => {
 	const [travelMethod, setTravelMethod] = useState<TravelMethodCode>('WALK')
+	const [currentCreature, setCurrentCreature] = useState<TravelCreature>()
 	const [isUsingSled, setIsUsingSled] = useState<boolean>(true)
 	const [isWilderness, setIsWilderness] = useState<boolean>(false)
 	const [isMountains, setIsMountains] = useState<boolean>(false)
@@ -79,6 +82,10 @@ export const TravelCalculator: component = ({
 	] = useState<EncomberanceCode>('c')
 
 	const [calculatedTravelHours, setCalculatedTravelHours] = useState<number>(0)
+	const [
+		totalCalculatedTravelHours,
+		setTotalCalculatedTravelHours,
+	] = useState<number>(0)
 
 	const onTravelSelect = onSelectChange<TravelMethodCode>(setTravelMethod)
 	const onSledChange = onCheckboxChange(setIsUsingSled)
@@ -89,6 +96,10 @@ export const TravelCalculator: component = ({
 	const onInventoryWeightChange = onNumberInputChange<number>(
 		setInventoryWeight
 	)
+
+	useEffect(() => {
+		setCurrentCreature(creatureData[travelMethod])
+	}, [travelMethod])
 
 	useEffect(() => {
 		const sledTravelMethod = sledTravelMethodData[travelMethod]?.find(
@@ -136,7 +147,7 @@ export const TravelCalculator: component = ({
 			currentEncomberance
 		]
 
-		const { travelTimeReduction } = creatureData[travelMethod]
+		const { travelTimeReduction, restInterval } = creatureData[travelMethod]
 
 		const terrainMultiplier = (isMountains && 3) || (isWilderness && 2) || 1
 
@@ -145,7 +156,14 @@ export const TravelCalculator: component = ({
 			encomberanceMultiplier *
 			terrainMultiplier
 
-		setCalculatedTravelHours(totalTravelHours)
+		setCalculatedTravelHours(abbreviatedNumber(totalTravelHours))
+
+		if (restInterval) {
+			const restHours = Math.floor(totalTravelHours) / restInterval
+			setTotalCalculatedTravelHours(
+				abbreviatedNumber(totalTravelHours + restHours)
+			)
+		}
 	}, [
 		currentEncomberance,
 		baseTravelHours,
@@ -249,7 +267,15 @@ export const TravelCalculator: component = ({
 
 				<div>
 					<p>
-						<strong>Total travel hours:</strong> {calculatedTravelHours}
+						<strong>Total travel time:</strong> {calculatedTravelHours} hours
+						{Boolean(currentCreature?.restInterval) && (
+							<>
+								<br />
+								(Creature must rest every {currentCreature?.restInterval} hours)
+								<br />
+								<strong>Plus rests:</strong> {totalCalculatedTravelHours} hours
+							</>
+						)}
 					</p>
 					<p>
 						<strong>Encomberance:</strong>{' '}
