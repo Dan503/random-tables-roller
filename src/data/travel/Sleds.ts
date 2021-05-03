@@ -95,19 +95,24 @@ const getSledCreatureComboData = (creatureCode: TravelMethodCode, props: Array<G
 export const sledTravelMethodData: SledTravelMethodData = {
 	WALK: null,
 	SNOWSHOE: null,
-	DOG: getSledCreatureComboData('DOG', [{
-		creatureCount: 2,
-		costToRent: 3,
-		sledSize: 'XS'
-	}, {
-		creatureCount: 4,
-		costToRent: 5,
-		sledSize: 'S'
-	}, {
-		creatureCount: 6,
-		costToRent: 8,
-		sledSize: 'M'
-	}]),
+	DOG: getSledCreatureComboData('DOG', [
+		{
+			creatureCount: 1,
+			costToRent: 1,
+			sledSize: 'XS'
+		}, {
+			creatureCount: 2,
+			costToRent: 3,
+			sledSize: 'XS'
+		}, {
+			creatureCount: 4,
+			costToRent: 5,
+			sledSize: 'S'
+		}, {
+			creatureCount: 6,
+			costToRent: 8,
+			sledSize: 'M'
+		}]),
 	BIRD: null,
 	DEER: getSledCreatureComboData('DEER', [
 		{
