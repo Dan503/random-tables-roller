@@ -62,7 +62,7 @@ export function onCheckboxChange(setState: (newState: boolean) => void) {
 
 export function onNumberInputChange<ReturnState = number>(setState: (newState: ReturnState) => void) {
 	return (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-		const newValue: unknown = parseFloat(e.target.value)
+		const newValue: unknown = parseFloat(e.target.value) || 0
 		setState(newValue as ReturnState)
 	}
 }
