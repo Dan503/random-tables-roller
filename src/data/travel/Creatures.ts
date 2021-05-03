@@ -70,7 +70,7 @@ export const creatureData: CreatureData = {
 		survivalMod: 0,
 		frostCheckMod: 0,
 		isLarge: false,
-		travelTimeReduction: 0,
+		travelTimeReduction: 1,
 	},
 	DOG: {
 		travelMethodCode: 'DOG',
