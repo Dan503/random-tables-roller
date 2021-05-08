@@ -15,11 +15,11 @@ export const weather: RollTableData<d20> = [
 	},
 	{
 		roll: [6, 7],
-		value: 'Frigid winds'
+		value: 'White out (Dense Fog)',
 	},
 	{
 		roll: [8, 9],
-		value: 'Dense Fog'
+		value: 'Frigid winds'
 	},
 	{
 		roll: [10, 11],
