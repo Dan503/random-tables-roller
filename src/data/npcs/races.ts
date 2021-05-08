@@ -1,6 +1,6 @@
-import { d100, RollTable } from "../../utils/utilTypes";
+import { d100, RollTableData } from "../../utils/utilTypes";
 
-export const races: RollTable<d100> = [
+export const races: RollTableData<d100> = [
 	{
 		roll: 1,
 		value: 'Half-orc'

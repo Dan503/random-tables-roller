@@ -1,7 +1,7 @@
-import { d100, RollTable } from "../../utils/utilTypes";
+import { d100, RollTableData } from "../../utils/utilTypes";
 
 /** Curses source http://dndspeak.com/2017/12/100-curses/ */
-export const curses: RollTable<d100> = [
+export const curses: RollTableData<d100> = [
 	{
 		roll: 1,
 		value: 'The character cannot turn right until the curse is lifted. '

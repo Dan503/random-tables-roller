@@ -1,6 +1,6 @@
-import { d100, RollTable } from "../../utils/utilTypes";
+import { d100, RollTableData } from "../../utils/utilTypes";
 /** Quirks from [PC and NPC Creation Tables](https://www.dmsguild.com/product/317982/PC-and-NPC-Creation-Tables) on DMs Guild */
-export const quirks: RollTable<d100> = [
+export const quirks: RollTableData<d100> = [
 	{
 		roll: 1,
 		value: 'Always very dirty and smells bad'

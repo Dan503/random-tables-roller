@@ -30,4 +30,4 @@ export interface Roll<dSize = d100> {
 export type RollRow = Roll | ReactNode
 
 /** The typical structure of a full roll table */
-export type RollTable<dSize = d100> = Array<Roll<dSize>>
+export type RollTableData<dSize = d100> = Array<Roll<dSize>>

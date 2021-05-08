@@ -1,6 +1,6 @@
-import { d20, RollTable } from "../../utils/utilTypes";
+import { d20, RollTableData } from "../../utils/utilTypes";
 
-export const weather: RollTable<d20> = [
+export const weather: RollTableData<d20> = [
 	{
 		roll: 1,
 		value: 'Blizzard (-5 next weather roll)'

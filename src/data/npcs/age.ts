@@ -1,7 +1,7 @@
-import { RollTable } from "../../utils/utilTypes";
+import { RollTableData } from "../../utils/utilTypes";
 
 /** Remember that the values are for probability, not age brackets */
-export const age: RollTable = [
+export const age: RollTableData = [
 	{
 		roll: 1,
 		value: 'Baby'
