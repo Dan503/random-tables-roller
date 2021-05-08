@@ -1,6 +1,4 @@
-import { d4, RollTableData } from "../../utils/utilTypes";
-
-export const storms: RollTableData<d4> = [
+export const storms = [
 	//1
 	'Blizzard',
 	//2

@@ -11,7 +11,7 @@ import {
 } from './data/Arctic-encounters'
 import { personality, quirks, races, sex, age } from './data/npcs'
 import { curses } from './data/other'
-import { storms, weather } from './data/weather'
+import { storms, weather, weatherDuration } from './data/weather'
 import { Roll } from './utils/utilTypes'
 
 function App() {
@@ -62,6 +62,11 @@ function App() {
 					<RollTableSet heading="Weather & Storms">
 						<RollResult label="Weather" tableData={weather} dSize="d20" />
 						<RollResult label="Storm" tableData={storms} dSize="d4" />
+						<RollResult<ReactNode>
+							label="Duration"
+							tableData={weatherDuration}
+							dSize="d8"
+						/>
 					</RollTableSet>
 
 					<RollTableSet heading="Other aspects">
