@@ -1,4 +1,6 @@
-# New Project
+# Random RPG rolling tables
+
+A personal project for quickly rolling random tables for my D&D games.
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
