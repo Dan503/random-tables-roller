@@ -1,9 +1,0 @@
-.RollTableSet table {
-	width: 100%;
-	border-spacing: 1em;
-}
-
-.RollTableSet thead tr th {
-	border-bottom: 1px solid #61dafb;
-	padding-bottom: 20px;
-}

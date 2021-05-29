@@ -1,1 +1,0 @@
-export { curses } from './curses'
