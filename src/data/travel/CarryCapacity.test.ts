@@ -1,5 +1,5 @@
-import { generateCarryCapacity, CarryCapacity } from './CarryCapacity'
 import { expect } from 'chai'
+import { CarryCapacity, generateCarryCapacity } from './CarryCapacity'
 
 describe('1 creature', () => {
 	test('20 strength - large - no sled', () => {

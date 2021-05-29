@@ -1,6 +1,5 @@
+import { FC, useEffect, useState } from 'react'
 import type { CarryCapacity } from '../../data/travel/CarryCapacity'
-
-import { FC, useState, useEffect } from 'react'
 import {
 	creatureData,
 	TravelCreature,
@@ -10,10 +9,10 @@ import {
 } from '../../data/travel/Creatures'
 import { sledTravelMethodData } from '../../data/travel/Sleds'
 import {
+	abbreviatedNumber,
 	onCheckboxChange,
 	onNumberInputChange,
 	onSelectChange,
-	abbreviatedNumber,
 } from '../../utils/utilFunctions'
 import { FlexGap } from '../FlexGap/FlexGap'
 

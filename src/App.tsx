@@ -1,19 +1,18 @@
 import type { ReactNode } from 'react'
-import type { Roll } from './utils/utilTypes'
-
 import './App.css'
 import { FlexGap } from './components/FlexGap/FlexGap'
 import { RollResult } from './components/RollResult/RollResult'
 import { RollTableSet } from './components/RollTableSet/RollTableSet'
 import { TravelCalculator } from './components/TravelCalculator/TravelCalculator'
 import {
-	creatures,
 	activityBeast,
 	activityHumanoid,
+	creatures,
 } from './data/Arctic-encounters'
-import { personality, quirks, races, sex, age } from './data/npcs'
+import { age, personality, quirks, races, sex } from './data/npcs'
 import { curses } from './data/other'
 import { storms, weather, weatherDuration } from './data/weather'
+import type { Roll } from './utils/utilTypes'
 
 function App() {
 	return (

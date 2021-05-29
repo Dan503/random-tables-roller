@@ -1,5 +1,5 @@
 import type { ChangeEvent, ReactNode } from 'react'
-import type { diceName, d20, d100, Roll } from './utilTypes'
+import type { d100, d20, diceName, Roll } from './utilTypes'
 
 export const maxRolls = {
 	d100: 100,
