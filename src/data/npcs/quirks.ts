@@ -1,193 +1,194 @@
-import { d100, RollTableData } from "../../utils/utilTypes";
+import type { d100, RollTableData } from '../../utils/utilTypes'
 /** Quirks from [PC and NPC Creation Tables](https://www.dmsguild.com/product/317982/PC-and-NPC-Creation-Tables) on DMs Guild */
 export const quirks: RollTableData<d100> = [
 	{
 		roll: 1,
-		value: 'Always very dirty and smells bad'
+		value: 'Always very dirty and smells bad',
 	},
 	{
 		roll: 2,
-		value: 'Off their rocker... truly unique'
+		value: 'Off their rocker... truly unique',
 	},
 	{
 		roll: 3,
-		value: 'Absolutely cannot swim'
+		value: 'Absolutely cannot swim',
 	},
 	{
 		roll: 4,
-		value: 'Pretends to have greater riches'
+		value: 'Pretends to have greater riches',
 	},
 	{
 		roll: 5,
-		value: 'Adrenaline junkie, always wants to be in danger'
+		value: 'Adrenaline junkie, always wants to be in danger',
 	},
 	{
 		roll: 6,
-		value: 'Addicted to some type of substance'
+		value: 'Addicted to some type of substance',
 	},
 	{
 		roll: 7,
-		value: 'Afraid of *element* (1 water / 2 fire / 3 lightning / 4 forests)'
+		value: 'Afraid of *element* (1 water / 2 fire / 3 lightning / 4 forests)',
 	},
 	{
 		roll: 8,
-		value: 'Afraid of animal (harmless or not)'
+		value: 'Afraid of animal (harmless or not)',
 	},
 	{
 		roll: 9,
-		value: 'Afraid of heights'
+		value: 'Afraid of heights',
 	},
 	{
 		roll: 10,
-		value: 'Terrified of the dark'
+		value: 'Terrified of the dark',
 	},
 	{
 		roll: 11,
-		value: 'In debt to bad people'
+		value: 'In debt to bad people',
 	},
 	{
 		roll: 12,
-		value: 'Bad memory'
+		value: 'Bad memory',
 	},
 	{
 		roll: 13,
-		value: 'Believes literally everything they hear'
+		value: 'Believes literally everything they hear',
 	},
 	{
 		roll: 14,
-		value: 'Can see dead people / spirits'
+		value: 'Can see dead people / spirits',
 	},
 	{
 		roll: 15,
-		value: 'Only speaks a non-common language'
+		value: 'Only speaks a non-common language',
 	},
 	{
 		roll: 16,
-		value: 'Cannot tell a lie'
+		value: 'Cannot tell a lie',
 	},
 	{
 		roll: 17,
-		value: 'Character gets very emotional very easily'
+		value: 'Character gets very emotional very easily',
 	},
 	{
 		roll: 18,
-		value: 'Character is a HUGE flirt'
+		value: 'Character is a HUGE flirt',
 	},
 	{
 		roll: 19,
-		value: 'Is a compulsive hoarder'
+		value: 'Is a compulsive hoarder',
 	},
 	{
 		roll: 20,
-		value: 'Animal lover who is inept with animals'
+		value: 'Animal lover who is inept with animals',
 	},
 	{
 		roll: 21,
-		value: 'Claustrophobic / Afraid of heights'
+		value: 'Claustrophobic / Afraid of heights',
 	},
 	{
 		roll: 22,
-		value: 'Compulsive Liar'
+		value: 'Compulsive Liar',
 	},
 	{
 		roll: 23,
-		value: 'Deathly Allergic to (*specific common food item*)'
+		value: 'Deathly Allergic to (*specific common food item*)',
 	},
 	{
 		roll: 24,
-		value: 'Borderline fatal allergy to something common'
+		value: 'Borderline fatal allergy to something common',
 	},
 	{
 		roll: 25,
-		value: 'Ambivalent to gold, not moved by money at all'
+		value: 'Ambivalent to gold, not moved by money at all',
 	},
 	{
 		roll: 26,
-		value: 'Photo-sensitive epileptic seizures'
+		value: 'Photo-sensitive epileptic seizures',
 	},
 	{
 		roll: 27,
-		value: 'Everything is "magical" and they say so'
+		value: 'Everything is "magical" and they say so',
 	},
 	{
 		roll: 28,
-		value: `Everything is mundane, magic doesn't exist`
+		value: `Everything is mundane, magic doesn't exist`,
 	},
 	{
 		roll: 29,
-		value: 'Extremely religious, praises their deity'
+		value: 'Extremely religious, praises their deity',
 	},
 	{
 		roll: 30,
-		value: 'Trouble focusing on one thing at a time (ADD)'
+		value: 'Trouble focusing on one thing at a time (ADD)',
 	},
 	{
 		roll: 31,
-		value: 'Extremely old, possibly senile'
+		value: 'Extremely old, possibly senile',
 	},
 	{
 		roll: 32,
-		value: 'Has multiple personalities, shifts between them (roll 2+ personality traits)'
+		value:
+			'Has multiple personalities, shifts between them (roll 2+ personality traits)',
 	},
 	{
 		roll: 33,
-		value: 'Evangelical, always trying to convert others'
+		value: 'Evangelical, always trying to convert others',
 	},
 	{
 		roll: 34,
-		value: 'Extremely short temper / anger issues'
+		value: 'Extremely short temper / anger issues',
 	},
 	{
 		roll: 35,
-		value: 'Is always unprepared and never ready'
+		value: 'Is always unprepared and never ready',
 	},
 	{
 		roll: 36,
-		value: 'Extremely sceptical, distrusts everyone'
+		value: 'Extremely sceptical, distrusts everyone',
 	},
 	{
 		roll: 37,
-		value: 'Eyes glow when they tell a lie'
+		value: 'Eyes glow when they tell a lie',
 	},
 	{
 		roll: 38,
-		value: 'Addicted to magical healing'
+		value: 'Addicted to magical healing',
 	},
 	{
 		roll: 39,
-		value: 'Gluttonous, always eating or drinking'
+		value: 'Gluttonous, always eating or drinking',
 	},
 	{
 		roll: 40,
-		value: 'Has a crush on one of the Players'
+		value: 'Has a crush on one of the Players',
 	},
 	{
 		roll: 41,
-		value: 'Cursed (Roll on curses table)'
+		value: 'Cursed (Roll on curses table)',
 	},
 	{
 		roll: 42,
-		value: 'Paranoid their Dark Secret will come out'
+		value: 'Paranoid their Dark Secret will come out',
 	},
 	{
 		roll: 43,
-		value: `Is posing as someone they're not`
+		value: `Is posing as someone they're not`,
 	},
 	{
 		roll: 44,
-		value: 'Has a nervous tick / shaky hands'
+		value: 'Has a nervous tick / shaky hands',
 	},
 	{
 		roll: 45,
-		value: 'Thinks their stuffed pet is alive'
+		value: 'Thinks their stuffed pet is alive',
 	},
 	{
 		roll: 46,
-		value: 'Secretly royalty in hiding'
+		value: 'Secretly royalty in hiding',
 	},
 	{
 		roll: 47,
-		value: 'Extremely over the top attractive'
+		value: 'Extremely over the top attractive',
 	},
 	{
 		roll: 48,

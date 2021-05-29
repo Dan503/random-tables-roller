@@ -1,5 +1,5 @@
-import { FC, useState, useEffect } from 'react'
-import { CarryCapacity } from '../../data/travel/CarryCapacity'
+import { FC, useEffect, useState } from 'react'
+import type { CarryCapacity } from '../../data/travel/CarryCapacity'
 import {
 	creatureData,
 	TravelCreature,
@@ -9,10 +9,10 @@ import {
 } from '../../data/travel/Creatures'
 import { sledTravelMethodData } from '../../data/travel/Sleds'
 import {
+	abbreviatedNumber,
 	onCheckboxChange,
 	onNumberInputChange,
 	onSelectChange,
-	abbreviatedNumber,
 } from '../../utils/utilFunctions'
 import { FlexGap } from '../FlexGap/FlexGap'
 
@@ -76,26 +76,20 @@ export const TravelCalculator: component = ({
 	const [baseTravelHours, setBaseTravelHours] = useState<number>(0)
 	const [inventoryWeight, setInventoryWeight] = useState<number>(0)
 
-	const [
-		currentEncomberance,
-		setCurrentEncomberance,
-	] = useState<EncomberanceCode>('c')
+	const [currentEncomberance, setCurrentEncomberance] =
+		useState<EncomberanceCode>('c')
 
 	const [calculatedTravelHours, setCalculatedTravelHours] = useState<number>(0)
-	const [
-		totalCalculatedTravelHours,
-		setTotalCalculatedTravelHours,
-	] = useState<number>(0)
+	const [totalCalculatedTravelHours, setTotalCalculatedTravelHours] =
+		useState<number>(0)
 
 	const onTravelSelect = onSelectChange<TravelMethodCode>(setTravelMethod)
 	const onSledChange = onCheckboxChange(setIsUsingSled)
-	const onCreatureCountChange = onNumberInputChange<validCreatureCounts>(
-		setCreatureCount
-	)
+	const onCreatureCountChange =
+		onNumberInputChange<validCreatureCounts>(setCreatureCount)
 	const onBaseTravelHourChange = onNumberInputChange<number>(setBaseTravelHours)
-	const onInventoryWeightChange = onNumberInputChange<number>(
-		setInventoryWeight
-	)
+	const onInventoryWeightChange =
+		onNumberInputChange<number>(setInventoryWeight)
 
 	useEffect(() => {
 		setCurrentCreature(creatureData[travelMethod])
@@ -125,11 +119,8 @@ export const TravelCalculator: component = ({
 
 	useEffect(() => {
 		if (encumbrance) {
-			const {
-				comfortableLimit,
-				encumberedLimit,
-				heavilyEncumberedLimit,
-			} = encumbrance
+			const { comfortableLimit, encumberedLimit, heavilyEncumberedLimit } =
+				encumbrance
 			if (inventoryWeight <= comfortableLimit) {
 				setCurrentEncomberance('c')
 			} else if (inventoryWeight <= encumberedLimit) {
@@ -143,9 +134,8 @@ export const TravelCalculator: component = ({
 	}, [encumbrance, inventoryWeight])
 
 	useEffect(() => {
-		const { timeMultiplier: encomberanceMultiplier } = Encomberance[
-			currentEncomberance
-		]
+		const { timeMultiplier: encomberanceMultiplier } =
+			Encomberance[currentEncomberance]
 
 		const { travelTimeReduction, restInterval } = creatureData[travelMethod]
 

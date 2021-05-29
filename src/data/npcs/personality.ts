@@ -1,193 +1,193 @@
-import { d100, RollTableData } from "../../utils/utilTypes";
+import type { d100, RollTableData } from '../../utils/utilTypes'
 /** Personality traits from [PC and NPC Creation Tables](https://www.dmsguild.com/product/317982/PC-and-NPC-Creation-Tables) on DMs Guild */
 export const personality: RollTableData<d100> = [
 	{
 		roll: 1,
-		value: 'Addict'
+		value: 'Addict',
 	},
 	{
 		roll: 2,
-		value: 'Adorable'
+		value: 'Adorable',
 	},
 	{
 		roll: 3,
-		value: 'Annoyed'
+		value: 'Annoyed',
 	},
 	{
 		roll: 4,
-		value: 'Authoritative'
+		value: 'Authoritative',
 	},
 	{
 		roll: 5,
-		value: 'Massive mood swings (Bi-Polar)'
+		value: 'Massive mood swings (Bi-Polar)',
 	},
 	{
 		roll: 6,
-		value: 'Blunt (no filter)'
+		value: 'Blunt (no filter)',
 	},
 	{
 		roll: 7,
-		value: 'Bossy'
+		value: 'Bossy',
 	},
 	{
 		roll: 8,
-		value: 'Show no sympathy (Callous)'
+		value: 'Show no sympathy (Callous)',
 	},
 	{
 		roll: 9,
-		value: 'Careless'
+		value: 'Careless',
 	},
 	{
 		roll: 10,
-		value: 'Casual'
+		value: 'Casual',
 	},
 	{
 		roll: 11,
-		value: 'Charitable'
+		value: 'Charitable',
 	},
 	{
 		roll: 12,
-		value: 'Cheerful'
+		value: 'Cheerful',
 	},
 	{
 		roll: 13,
-		value: 'Childlike'
+		value: 'Childlike',
 	},
 	{
 		roll: 14,
-		value: 'Clean Freak'
+		value: 'Clean Freak',
 	},
 	{
 		roll: 15,
-		value: 'Clumsy'
+		value: 'Clumsy',
 	},
 	{
 		roll: 16,
-		value: 'Cocky'
+		value: 'Cocky',
 	},
 	{
 		roll: 17,
-		value: 'Crazy'
+		value: 'Crazy',
 	},
 	{
 		roll: 18,
-		value: 'Curious'
+		value: 'Curious',
 	},
 	{
 		roll: 19,
-		value: 'Daring / Determined'
+		value: 'Daring / Determined',
 	},
 	{
 		roll: 20,
-		value: 'Deaf'
+		value: 'Deaf',
 	},
 	{
 		roll: 21,
-		value: 'Demanding'
+		value: 'Demanding',
 	},
 	{
 		roll: 22,
-		value: 'Dignified'
+		value: 'Dignified',
 	},
 	{
 		roll: 23,
-		value: 'Disagreeable'
+		value: 'Disagreeable',
 	},
 	{
 		roll: 24,
-		value: 'Elegant'
+		value: 'Elegant',
 	},
 	{
 		roll: 25,
-		value: 'Overly emotional'
+		value: 'Overly emotional',
 	},
 	{
 		roll: 26,
-		value: 'Emotionless'
+		value: 'Emotionless',
 	},
 	{
 		roll: 27,
-		value: 'Empathetic'
+		value: 'Empathetic',
 	},
 	{
 		roll: 28,
-		value: 'Envious'
+		value: 'Envious',
 	},
 	{
 		roll: 29,
-		value: 'Excited'
+		value: 'Excited',
 	},
 	{
 		roll: 30,
-		value: 'Fanciful'
+		value: 'Fanciful',
 	},
 	{
 		roll: 31,
-		value: 'Drunk'
+		value: 'Drunk',
 	},
 	{
 		roll: 32,
-		value: 'Foolish'
+		value: 'Foolish',
 	},
 	{
 		roll: 33,
-		value: 'Forgetful'
+		value: 'Forgetful',
 	},
 	{
 		roll: 34,
-		value: 'Friendly'
+		value: 'Friendly',
 	},
 	{
 		roll: 35,
-		value: 'Frightened'
+		value: 'Frightened',
 	},
 	{
 		roll: 36,
-		value: 'Frugal (hates spending money)'
+		value: 'Frugal (hates spending money)',
 	},
 	{
 		roll: 37,
-		value: 'Gambles over everything'
+		value: 'Gambles over everything',
 	},
 	{
 		roll: 38,
-		value: 'Generous'
+		value: 'Generous',
 	},
 	{
 		roll: 39,
-		value: 'Gossiper'
+		value: 'Gossiper',
 	},
 	{
 		roll: 40,
-		value: 'Greedy'
+		value: 'Greedy',
 	},
 	{
 		roll: 41,
-		value: 'Gullible'
+		value: 'Gullible',
 	},
 	{
 		roll: 42,
-		value: 'Hates Adventurers'
+		value: 'Hates Adventurers',
 	},
 	{
 		roll: 43,
-		value: 'Helpful'
+		value: 'Helpful',
 	},
 	{
 		roll: 44,
-		value: 'Honest (too honest)'
+		value: 'Honest (too honest)',
 	},
 	{
 		roll: 45,
-		value: 'Humble'
+		value: 'Humble',
 	},
 	{
 		roll: 46,
-		value: 'Humorous'
+		value: 'Humorous',
 	},
 	{
 		roll: 47,
-		value: 'Mysterious'
+		value: 'Mysterious',
 	},
 	{
 		roll: 48,

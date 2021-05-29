@@ -5,7 +5,7 @@ import {
 	maxRolls,
 	roll,
 } from '../../utils/utilFunctions'
-import { diceName, Roll, d100, RollRow } from '../../utils/utilTypes'
+import type { d100, diceName, Roll, RollRow } from '../../utils/utilTypes'
 import './RollResult.css'
 
 type Props<T extends RollRow> = {

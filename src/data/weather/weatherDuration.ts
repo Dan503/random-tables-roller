@@ -1,4 +1,3 @@
-
 export const weatherDuration = [
 	'1 hour',
 	'2 hours',
