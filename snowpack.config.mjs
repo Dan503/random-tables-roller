@@ -1,7 +1,7 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
 	mount: {
-		public: { url: '/', static: true },
+		public: { url: '/random-tables-roller', static: true },
 		src: { url: '/dist' },
 	},
 	plugins: [
@@ -32,6 +32,7 @@ export default {
 		/* ... */
 	},
 	buildOptions: {
+		baseUrl: '/random-tables-roller',
 		/* ... */
 	},
 }

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "snowpack dev --polyfill-node",
-    "build": "snowpack build --polyfill-node",
+    "build": "snowpack build --polyfill-node && copyfiles -E -u 1 \"build/**/*\" docs",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
     "format": "prettier --write .",
     "lint": "prettier --check ."
@@ -29,6 +29,7 @@
     "@types/snowpack-env": "^2.3.3",
     "@web/test-runner": "^0.13.3",
     "chai": "^4.3.4",
+    "copyfiles": "^2.4.1",
     "prettier": "^2.2.1",
     "prettier-plugin-organize-imports": "^2.1.0",
     "snowpack": "^3.3.7",
