@@ -3,8 +3,8 @@
     "start": "snowpack dev --polyfill-node",
     "build": "snowpack build --polyfill-node",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
   },
   "dependencies": {
     "react": "^17.0.2",

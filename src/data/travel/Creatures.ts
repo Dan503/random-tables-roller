@@ -17,23 +17,30 @@ export type TravelMethodCode =
 	| 'DEER'
 	| 'BEAR'
 
-export const travelMethods: Array<TravelMethodCode> = ['WALK', 'SNOWSHOE', 'DOG', 'BIRD', 'DEER', 'BEAR']
+export const travelMethods: Array<TravelMethodCode> = [
+	'WALK',
+	'SNOWSHOE',
+	'DOG',
+	'BIRD',
+	'DEER',
+	'BEAR',
+]
 
 export interface TravelCreature {
 	travelMethodCode: TravelMethodCode
 	str: number
 	strMod: number
-	carryCapacity: CarryCapacity,
+	carryCapacity: CarryCapacity
 	cost: {
 		/** Gold needed to buy outright */
-		own: number,
+		own: number
 		/** Gold per day needed to rent */
 		rent: number
-	},
-	rationsPerLongRest: number,
-	survivalMod: number,
-	frostCheckMod: number,
-	travelTimeReduction: number,
+	}
+	rationsPerLongRest: number
+	survivalMod: number
+	frostCheckMod: number
+	travelTimeReduction: number
 	/** 1 = creature must rest every 1 hour of travel */
 	restInterval?: number
 	isLarge: boolean
@@ -81,7 +88,7 @@ export const creatureData: CreatureData = {
 		carryCapacity: generateCarryCapacity({ strengthScore: 12, isLarge: false }),
 		cost: {
 			own: 10,
-			rent: 1
+			rent: 1,
 		},
 		rationsPerLongRest: 0.5,
 		survivalMod: 1,
@@ -97,7 +104,7 @@ export const creatureData: CreatureData = {
 		carryCapacity: generateCarryCapacity({ strengthScore: 20 }),
 		cost: {
 			own: 50,
-			rent: 5
+			rent: 5,
 		},
 		rationsPerLongRest: 1,
 		survivalMod: 1,
