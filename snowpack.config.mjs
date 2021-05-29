@@ -22,7 +22,7 @@ export default {
 	],
 	optimize: {
 		/* Example: Bundle your final build: */
-		// "bundle": true,
+		bundle: true,
 	},
 	packageOptions: {
 		knownEntrypoints: ['react/jsx-runtime', 'web-vitals'],
@@ -33,6 +33,7 @@ export default {
 	},
 	buildOptions: {
 		baseUrl: '/random-tables-roller',
+		metaUrlPath: 'snowpack',
 		/* ... */
 	},
 }
