@@ -2,6 +2,8 @@
 
 A personal project for quickly rolling random tables for my D&D games.
 
+Website: https://dan503.github.io/random-tables-roller/
+
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
 ## Available Scripts

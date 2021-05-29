@@ -1,4 +1,5 @@
 {
+  "homepage": "https://dan503.github.io/random-tables-roller/",
   "scripts": {
     "start": "snowpack dev --polyfill-node",
     "build": "snowpack build --polyfill-node && copyfiles -E -u 1 \"build/**/*\" docs",
