@@ -1,0 +1,30 @@
+.RollResult h3 {
+	margin: 0;
+}
+
+.RollResult button[aria-expanded]::before {
+	content: '>';
+	display: block;
+}
+.RollResult button[aria-expanded='true']::before {
+	transform: rotate(-90deg) translateY(-3px);
+}
+.RollResult button[aria-expanded='false']::before {
+	transform: rotate(90deg) translateY(-3px);
+}
+
+.crit {
+	font-weight: bold;
+	box-shadow: 0 0 20px #000;
+	background-color: #000;
+	border-radius: 10px;
+	padding: 3px 15px 10px;
+	border: 2px solid currentColor;
+	white-space: nowrap;
+}
+.crit-success {
+	color: lawngreen;
+}
+.crit-fail {
+	color: hsl(0, 85%, 67%);
+}

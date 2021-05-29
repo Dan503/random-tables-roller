@@ -7,6 +7,7 @@ export default {
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
+    "@snowpack/plugin-babel",
     [
       '@snowpack/plugin-typescript',
       {
@@ -24,6 +25,10 @@ export default {
     // "bundle": true,
   },
   packageOptions: {
+    knownEntrypoints: [
+      "react/jsx-runtime",
+      "web-vitals"
+    ]
     /* ... */
   },
   devOptions: {
