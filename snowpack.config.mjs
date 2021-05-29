@@ -1,8 +1,8 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
 	mount: {
-		public: { url: '/random-tables-roller', static: true },
-		src: { url: '/dist' },
+		public: { url: '/', static: true },
+		src: { url: '/assets' },
 	},
 	plugins: [
 		'@snowpack/plugin-react-refresh',
