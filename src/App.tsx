@@ -11,6 +11,13 @@ import {
 } from './data/Arctic-encounters'
 import { age, personality, quirks, races, sex } from './data/npcs'
 import { curses } from './data/other'
+import { itemBreakage } from './data/other/itemBreakage'
+import {
+	dangerousTravelEncounters,
+	safeTravelEncounters,
+	tavernEncounters,
+	townEncounters,
+} from './data/Predefined-Encounters'
 import { storms, weather, weatherDuration } from './data/weather'
 import type { Roll } from './utils/utilTypes'
 
@@ -39,6 +46,31 @@ function App() {
 						/>
 						<RollResult label="Quirk" tableData={quirks} dSize={'d100'} />
 						<RollResult label="Age (appearance)" tableData={age} dSize="d100" />
+					</RollTableSet>
+
+					<RollTableSet heading="Pre-defined encounters">
+						<RollResult
+							label="Dangerous travel encounters"
+							tableData={dangerousTravelEncounters}
+							// TODO: make dSize optional, calculate based on length of array if not provided
+							dSize="d100"
+						/>
+						<RollResult
+							label="Safe travel encounters"
+							tableData={safeTravelEncounters}
+							// TODO: remove dSize
+							dSize="d100"
+						/>
+						<RollResult
+							label="Town encounters"
+							tableData={townEncounters}
+							dSize="d12"
+						/>
+						<RollResult
+							label="Tavern encounters"
+							tableData={tavernEncounters}
+							dSize="d12"
+						/>
 					</RollTableSet>
 
 					<RollTableSet heading="Arctic encounter generator">
@@ -70,7 +102,12 @@ function App() {
 					</RollTableSet>
 
 					<RollTableSet heading="Other aspects">
-						<RollResult label="Curses" tableData={curses} dSize={'d100'} />
+						<RollResult
+							label="Item breakage"
+							tableData={itemBreakage}
+							dSize="d10"
+						/>
+						<RollResult label="Curses" tableData={curses} dSize="d100" />
 					</RollTableSet>
 
 					<p>
