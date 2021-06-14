@@ -1,27 +1,22 @@
 import { useState } from 'react'
-import {
-	getResult,
-	isRollObject,
-	maxRolls,
-	roll,
-} from '../../utils/utilFunctions'
-import type { d100, diceName, Roll, RollRow } from '../../utils/utilTypes'
+import { getResult, isRollObject, maxRolls } from '../../utils/utilFunctions'
+import type { diceName, Roll, RollRow } from '../../utils/utilTypes'
 import './RollResult.css'
 
 type Props<T extends RollRow> = {
 	label: string
-	tableData?: Array<T>
-	dSize: diceName
+	tableData: Array<T>
+	dSize?: diceName
 }
 
 const critClass = (
-	diceResult?: d100,
-	dSize: diceName = 'd20'
+	diceResult: number,
+	maxRoll: number
 ): 'crit crit-fail' | 'crit crit-success' | '' => {
 	if (diceResult === 1) {
 		return 'crit crit-fail'
 	}
-	return maxRolls[dSize] === diceResult ? 'crit crit-success' : ''
+	return maxRoll === diceResult ? 'crit crit-success' : ''
 }
 
 export const RollResult = <T extends RollRow>({
@@ -32,17 +27,10 @@ export const RollResult = <T extends RollRow>({
 	const [result, setResult] = useState<Roll>()
 	const [isTableVisible, setIsTableVisible] = useState<boolean>(false)
 
+	const maxRoll = typeof dSize === 'string' ? maxRolls[dSize] : tableData.length
+
 	const handleRoll = () => {
-		if (tableData) {
-			setResult(getResult(tableData, dSize))
-		} else {
-			const rolledNumber = roll(dSize)
-			setResult({
-				roll: rolledNumber,
-				value: `${rolledNumber}`,
-				actualRoll: rolledNumber,
-			})
-		}
+		setResult(getResult(tableData, maxRoll))
 	}
 
 	const toggleTable = () => {
@@ -54,9 +42,9 @@ export const RollResult = <T extends RollRow>({
 			<tr className="RollResult">
 				<th>{label}</th>
 				<td>
-					{tableData && (
-						<span className={critClass(result?.actualRoll, dSize)}>
-							[ {result?.actualRoll} ]
+					{tableData && result?.actualRoll && (
+						<span className={critClass(result.actualRoll, maxRoll)}>
+							[ {result.actualRoll} ]
 						</span>
 					)}
 				</td>

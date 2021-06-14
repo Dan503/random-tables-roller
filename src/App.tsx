@@ -52,14 +52,10 @@ function App() {
 						<RollResult
 							label="Dangerous travel encounters"
 							tableData={dangerousTravelEncounters}
-							// TODO: make dSize optional, calculate based on length of array if not provided
-							dSize="d100"
 						/>
 						<RollResult
 							label="Safe travel encounters"
 							tableData={safeTravelEncounters}
-							// TODO: remove dSize
-							dSize="d100"
 						/>
 						<RollResult
 							label="Town encounters"
