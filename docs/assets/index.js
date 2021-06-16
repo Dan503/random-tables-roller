@@ -8024,11 +8024,12 @@ var maxRolls = {
   d4: 4
 };
 var roll = (diceName = "d20") => {
-  return Math.ceil(Math.random() * maxRolls[diceName]);
+  const maxRoll = typeof diceName === "string" ? maxRolls[diceName] : diceName;
+  return Math.ceil(Math.random() * maxRoll);
 };
 var isRollObject = (tableRow) => Object.keys(tableRow || {}).includes("roll");
-var getResult = (tableData, dSize = "d20") => {
-  const result = roll(dSize);
+var getResult = (tableData, maxRoll) => {
+  const result = roll(maxRoll);
   const findMatchingRow = (row) => {
     if (Array.isArray(row.roll)) {
       const isGreaterThanMin = row.roll[0] <= result;
@@ -8073,11 +8074,11 @@ var hasDecimals = (number) => number % 1 !== 0;
 var abbreviatedNumber = (number) => hasDecimals(number) ? parseFloat(number.toFixed(2)) : number;
 
 // build/assets/components/RollResult/RollResult.js
-var critClass = (diceResult, dSize = "d20") => {
+var critClass = (diceResult, maxRoll) => {
   if (diceResult === 1) {
     return "crit crit-fail";
   }
-  return maxRolls[dSize] === diceResult ? "crit crit-success" : "";
+  return maxRoll === diceResult ? "crit crit-success" : "";
 };
 var RollResult = ({
   label,
@@ -8086,17 +8087,9 @@ var RollResult = ({
 }) => {
   const [result, setResult] = useState();
   const [isTableVisible, setIsTableVisible] = useState(false);
+  const maxRoll = typeof dSize === "string" ? maxRolls[dSize] : tableData.length;
   const handleRoll = () => {
-    if (tableData) {
-      setResult(getResult(tableData, dSize));
-    } else {
-      const rolledNumber = roll(dSize);
-      setResult({
-        roll: rolledNumber,
-        value: `${rolledNumber}`,
-        actualRoll: rolledNumber
-      });
-    }
+    setResult(getResult(tableData, maxRoll));
   };
   const toggleTable = () => {
     setIsTableVisible(!isTableVisible);
@@ -8107,9 +8100,9 @@ var RollResult = ({
       children: [/* @__PURE__ */ jsx("th", {
         children: label
       }), /* @__PURE__ */ jsx("td", {
-        children: tableData && /* @__PURE__ */ jsxs("span", {
-          className: critClass(result === null || result === void 0 ? void 0 : result.actualRoll, dSize),
-          children: ["[ ", result === null || result === void 0 ? void 0 : result.actualRoll, " ]"]
+        children: tableData && (result === null || result === void 0 ? void 0 : result.actualRoll) && /* @__PURE__ */ jsxs("span", {
+          className: critClass(result.actualRoll, maxRoll),
+          children: ["[ ", result.actualRoll, " ]"]
         })
       }), /* @__PURE__ */ jsx("td", {
         children: result === null || result === void 0 ? void 0 : result.value
@@ -9860,6 +9853,140 @@ var curses = [{
   value: "This curse makes the character forcibly say gibberish every time they cast a spell (or some other common action)."
 }];
 
+// build/assets/data/other/itemBreakage.js
+var itemBreakage = [
+  "A magic item becomes frozen (unusable until thawed)",
+  "Mundane weapon breaks",
+  "Mundane armor or shield breaks",
+  "A mundane miscelanious item breaks",
+  "A potion freezes and shatters (broken)",
+  "A weapon becomes frozen (unusable until thawed)",
+  "Mundane armor or shield becomes frozen (unusable until thawed)",
+  "A mundane miscelanious item becomes frozen (unusable until thawed)",
+  "A potion becomes frozen (unusable until thawed)",
+  "Nothing Happens"
+];
+
+// build/assets/data/Predefined-Encounters/townEncounters.js
+var townEncounters = [
+  "PC kidnap attempt",
+  "PC arrested/ falsely accused",
+  "Street merchant trying to secretly sell drugs to PC’s",
+  "A man is selling potions of vitality for strangely cheap prices (Fake... poisonous?)",
+  "Someone in town has been murdered",
+  "Drunk picks a fight with PC",
+  "Bump into seemingly kind person, they steal something from PC",
+  "Manhunt being held",
+  "Someone gets mugged (or worse... executed?)",
+  "Town Crier/ Religious Zealot Speech",
+  "A child needs help finding their cat / dog",
+  "Past (or random) NPC gives them a reward (Earned? Or mistaken for someone else?)"
+];
+var tavernEncounters = [
+  "Guards break in and begin to frisk / inspect everyone, looking for something/ someone (do the PC’s comply? are these really guards?)",
+  "A crossbow bolt flies from inside / outside the tavern and headshot kills an NPC",
+  "A woman is in the process of giving birth in the middle of the tavern",
+  "A bard is playing music that seems to have a strange calming effect (Wisdom save)",
+  "An old person performing religious miracles in town to build a following to a false god",
+  "A strange individual looks to be talking to (an item) as if it is sentient... is it?",
+  "There is a Cow in the middle of the tavern, everyone is drunk and doesn’t know how it got there",
+  "A member of your party is mistaken for a famous figure of some kind",
+  "A group in the back is having an arm wrestling competition",
+  "A (blind?) person starts telling adventure stories... but the	stories are about the PC’s... (How do they know? Who are they?)",
+  "An annual boy band competition for free drinks judged by the patrons",
+  "Drinking contest, who can last the longest?"
+];
+
+// build/assets/data/Predefined-Encounters/travelEncounters.js
+var dangerousTravelEncounters = [
+  "The “Creature of Nightmares” finds the party (see above explanation)",
+  "Avalanche or Blizzard",
+  "Creature(s) try to lure the party into an avalanche to eat their frozen bodies (animal bait/ chase after them?)",
+  "Ice elementals are the source of a blizzard, must be defeated to stop blizzard",
+  "A song echoes through the mountains / wilderness toward people around a campfire (Wisdom save) (good or bad with enchantment music?)",
+  "A creature hiding in wait un-burrows itself/ breaks through ice and surprise attacks one unlucky PC",
+  "A tribe of warriors overwhelm and kidnap the party, can they escape or talk their way out?",
+  "Start to be hunted down by a creature (unaware at first)",
+  "Creature is stalking the group and always retreats when	moved towards, what is it waiting for? (moment to strike/ more to arrive?)",
+  "Start to be followed by an Assassin (unaware at first)",
+  "A single large creature leaves dead animal in the open as bait for its next meal",
+  "A partially eaten carcass of a large creature (Does the predator return?)",
+  "Baited / led / trapped into an ambush by creatures",
+  "A large flying creature(s) swoops in and attacks (trying to carry one person away?)",
+  "A stampede of creatures rush through the party (skill challenge to avoid being trampled?)",
+  `Two huge creatures battle to the death in front of the
+		party (Do they join in?) One (or both) dies and the
+		party is left with its corpse (White Dragon? What do
+		they do with it? Who/ what else wants the carcass?)`,
+  "A trap (Dex saving throw) that suspends/ nets/ traps the PC’s in place (who/ what is coming?)",
+  "Two dueling wizards keep casting ice spells that block your path from their battle",
+  "A band of tribal raiders ask the party to join them on attacking a nearby village",
+  "A Juvenile White Dragon finds the party on its first hunt (Adult dragon watches over it?)",
+  "A huge sleeping creature blocks their travel, can they pass without waking it? (owlbear/ frost giant?)",
+  "Group of villagers fleeing from something chasing them (Single creature/ hoard/ nothing?)",
+  "Two opposing factions fight over treasure (bandits vs wizards / or Barbarians vs druids etc)",
+  "Dangerous creatures aggressively running towards party, but away from something more dangerous (Dragon/ Remorhaz/ Frost Ooze?)",
+  "Section of frozen land / lake is between you and your destination (1/2 speed for the day)",
+  "A group of tribal nomads, are they hostile or friendly? (Roll Reaction Table?)",
+  "Everyone makes a Wisdom save or rolls on the “Extreme Cold Mental Table”",
+  "Everyone makes a Frost Check or rolls on the “Extreme Cold Physical Table”",
+  "You find a baby dangerous creature (Overprotective mother attacks, becomes companion?)",
+  "One of your beasts / party members gets sick / cant travel till recovered (medicine check to recover them?)",
+  "1d6 worth of food rations become inedible for each party member",
+  "Everyone makes a Constitution saving throw or gets “the cold” (poisoned condition) for one full day (unless healed/ treated?)",
+  "A woman needing help lures PC’s into a trap (Hag? Shes being forced to do it?)",
+  "An abandoned wagon off to the side (Supplies inside? It’s a trap?!)",
+  `corpses of dead animals partially burried in a strange fassion are arranged from smallest to largest (human size creature looks to be next?)`,
+  `Ice castle with frozen blood and frozen solid bodies (Lair of Nightmare Creature?)`,
+  "Massive flying creature / bird / dragon flies overhead",
+  `Boulder sits in the middle of the snow, it looks as if it fell or was thrown (Ogres near?)`,
+  `Sharp spires of Chardalyn extend out of the ground forming a jagged wasteland (Lair to a Chardalyn Dragon?)`,
+  "Skelleton of a huge creature sticks out of the ground forming a large canopy (safety or a creatures lair?)",
+  `You find a large cavern face with dark blood across it,	inside you find a singular white scaled egg... Where is	the mother, what is this creature? (White dragon?)`
+];
+var safeTravelEncounters = [
+  "A family of 4 huddled together... frozen to death",
+  "A frigid battle field with bodies frozen in place",
+  "A 500 ft high wall that is 300 ft thick and is over 3 miles long",
+  "A 50ft tall statue of a dwarf holding his palm up, as if to forbid travelers from coming this way",
+  "A tiny island in the middle of a large frigid water lake (Whats on the island? Is the lake frozen?",
+  "A mile wide frozen lake with bodies frozen inside",
+  "A massive block of ice with a dangerous creature frozen	inside",
+  "A mile wide frozen lake with one singular creature frozen inside",
+  "A massive block of ice with a gentle creature frozen inside",
+  `Another adventuring group passes them by exchanging
+	a casual greeting from the forest being too dangerous,
+	you continue in to see the corpses of these same
+	adventurers lying around a freshly extinguished
+	campfire`,
+  "A trusting looking individual gives false information about the groups current quest (Wants to sabotage/ join the group)",
+  "A Traveling salesman that tries to sell fake stuff (Magic items, Frost check gear... that doesn’t work)",
+  "A traveling salesman that has useful items (magic items?) BUT they only accept food rations for payment",
+  "A dangerous creature quickly approaches camp, but right before anything happens a horn sounds and it runs (being hunted?)",
+  `An arctic fox is being chased by hunters, it jumps into	the arms
+		of the largest party member and wildshapes back into their human form,
+		a white haired little girl, the hunters arrive and say shes a witch
+		that needs to be dealt with`,
+  "A Half-Orc Druid is tending to a creature (another druid?) they have gift for players helping",
+  `Person looking for help towards where PC’s are going`,
+  "An injured “dangerous” animal lies in their path (shapeshifted druid?)",
+  "Tribal nomads that react to the party however they act to them (Fight = fight or welcoming = welcoming)",
+  "Someone appraoches who is freezing to death and needs food / warmth / shelter",
+  "Lone individual asks for shelter (good? bad? important NPC?)",
+  "A single old man traveling alone... hes quite strange",
+  "A suspicious hooded figure gathering herbs/ spell	components?",
+  "A group of fisherman struggling to catch knucklehead	trout (they are too weak)",
+  "Person coming from where PC’s are heading",
+  "A small cute creature befriends one of the PC’s and is their new familiar (what unique thing can it do?)",
+  "A person offering help towards where the party is going",
+  "A traveling cartographer roams the area and will help for a price",
+  "A cleric decked out in Cold Weather Gear offers aid to wandering adventurers (Cures stacks of exhaustion?)",
+  "“Polar Bear Club” doing ice water swimming... they are crazy!",
+  "A hot spring of some kind of thermal vent warming a small body of water",
+  "An adventurer frozen in a block of ice with a magic item on them",
+  "Find a magical item buried in the snow/ trapped in ice"
+];
+
 // build/assets/data/weather/storms.js
 var storms = [
   "Blizzard",
@@ -9942,6 +10069,23 @@ function App() {
             dSize: "d100"
           })]
         }), /* @__PURE__ */ jsxs(RollTableSet, {
+          heading: "Pre-defined encounters",
+          children: [/* @__PURE__ */ jsx(RollResult, {
+            label: "Dangerous travel encounters",
+            tableData: dangerousTravelEncounters
+          }), /* @__PURE__ */ jsx(RollResult, {
+            label: "Safe travel encounters",
+            tableData: safeTravelEncounters
+          }), /* @__PURE__ */ jsx(RollResult, {
+            label: "Town encounters",
+            tableData: townEncounters,
+            dSize: "d12"
+          }), /* @__PURE__ */ jsx(RollResult, {
+            label: "Tavern encounters",
+            tableData: tavernEncounters,
+            dSize: "d12"
+          })]
+        }), /* @__PURE__ */ jsxs(RollTableSet, {
           heading: "Arctic encounter generator",
           children: [/* @__PURE__ */ jsx(RollResult, {
             label: "Creature(s)",
@@ -9971,13 +10115,17 @@ function App() {
             tableData: weatherDuration,
             dSize: "d8"
           })]
-        }), /* @__PURE__ */ jsx(RollTableSet, {
+        }), /* @__PURE__ */ jsxs(RollTableSet, {
           heading: "Other aspects",
-          children: /* @__PURE__ */ jsx(RollResult, {
+          children: [/* @__PURE__ */ jsx(RollResult, {
+            label: "Item breakage",
+            tableData: itemBreakage,
+            dSize: "d10"
+          }), /* @__PURE__ */ jsx(RollResult, {
             label: "Curses",
             tableData: curses,
             dSize: "d100"
-          })
+          })]
         }), /* @__PURE__ */ jsxs("p", {
           children: ["Personality traits and Quirks from", " ", /* @__PURE__ */ jsx("a", {
             href: "https://www.dmsguild.com/product/317982/PC-and-NPC-Creation-Tables",
