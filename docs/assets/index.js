@@ -9853,6 +9853,562 @@ var curses = [{
   value: "This curse makes the character forcibly say gibberish every time they cast a spell (or some other common action)."
 }];
 
+// build/assets/data/other/chawingaCharms.js
+var chawingaCharms = [/* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of Biting Cold."
+    })
+  }), /* @__PURE__ */ jsx("p", {
+    children: "This charm has 3 charges. As a bonus action, you can expend 1 of the charm’s charges to wreathe your weapon attacks with biting cold for 1 minute. Until this effect ends, you deal an extra 1d6 cold damage when you hit with a melee or ranged weapon attack. Once all its charges have been expended, this charm vanishes from you."
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of Vitality."
+    })
+  }), /* @__PURE__ */ jsxs("p", {
+    children: ["This charm allows you to give yourself the benefit of a", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/magic-items/potion-of-vitality",
+      children: "Potion of Vitality"
+    }), " ", "as an action. Once you do so, the charm vanishes from you."]
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of Bounty."
+    })
+  }), /* @__PURE__ */ jsxs("p", {
+    children: ["This charm has 3 charges. As an action, you can expend 1 of the charm’s charges to cast the", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/create-food-and-water",
+      children: "create food and water"
+    }), " ", "spell, requiring no components. Once all its charges have been expended, this charm vanishes from you."]
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of Cold Resistance."
+    })
+  }), /* @__PURE__ */ jsx("p", {
+    children: "This charm allows you to give yourself resistance to cold damage as an action. This benefit lasts for 24 hours, after which the charm vanishes from you."
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of Snowball Strike."
+    })
+  }), /* @__PURE__ */ jsx("p", {
+    children: "This charm has 5 charges. As a bonus action, you can expend 1 of the charm’s charges to create a magical snowball in your hand and throw it. You must have a hand free to hold the snowball, or the charge is wasted. The snowball is a magic ranged weapon with which you are proficient. It has a normal range of 20 feet and a long range of 60 feet, it deals 1d4 cold damage on a hit, and it scores a critical hit on a roll of 19 or 20. If you score a critical hit with the snowball, the target is blinded until the end of its next turn. The snowball vanishes immediately after you hit or miss with it, or at the end of your turn if you don’t throw it. Once all its charges have been expended, this charm vanishes from you."
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of the Ice Troll."
+    })
+  }), /* @__PURE__ */ jsx("p", {
+    children: "This charm allows you to use your reaction when you take cold damage to reduce the damage to 0. You regain a number of hit points equal to half the cold damage you would have taken. Once you do so, the charm vanishes from you."
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of the Traveler’s Haven."
+    })
+  }), /* @__PURE__ */ jsxs("p", {
+    children: ["This charm has 3 charges. As an action, you can expend 1 of the charm’s charges to cast the", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/leomunds-tiny-hut",
+      children: "Leomund’s tiny hut spell"
+    }), ", no components required. Once all its charges have been expended, this charm vanishes from you."]
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of Darkvision."
+    })
+  }), /* @__PURE__ */ jsxs("p", {
+    children: ["This charm allows you to cast the", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/darkvision",
+      children: "darkvision"
+    }), " spell as an action, no components required. Once used three times, the charm goes away."]
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of Feather Falling."
+    })
+  }), /* @__PURE__ */ jsxs("p", {
+    children: ["This charm grants you the benefits of a", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/magic-items/ring-of-feather-falling",
+      children: "ring of feather falling"
+    }), ". These benefits last for 10 days, after which the charm vanishes from you."]
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of Heroism."
+    })
+  }), /* @__PURE__ */ jsxs("p", {
+    children: ["This charm allows you to give yourself the benefit of a", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/magic-items/potion-of-heroism",
+      children: "Potion of Heroism"
+    }), "as an action. Once you do so, the charm vanishes from you."]
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of Restoration."
+    })
+  }), /* @__PURE__ */ jsx("p", {
+    children: "This charm has 6 charges. You can use an action to expend some of its charges to cast one of the following spells:"
+  }), /* @__PURE__ */ jsxs("ul", {
+    children: [/* @__PURE__ */ jsxs("li", {
+      children: [/* @__PURE__ */ jsx("a", {
+        href: "https://www.dndbeyond.com/spells/greater-restoration",
+        children: "Greater Restoration"
+      }), " ", "(4 charges)"]
+    }), /* @__PURE__ */ jsxs("li", {
+      children: [/* @__PURE__ */ jsx("a", {
+        href: "https://www.dndbeyond.com/spells/lesser-restoration",
+        children: "Lesser Restoration"
+      }), " ", "(2 charges)"]
+    })]
+  }), /* @__PURE__ */ jsx("p", {
+    children: "Once all its charges have been expended, the charm vanishes from you."
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of the Slayer."
+    })
+  }), /* @__PURE__ */ jsxs("p", {
+    children: ["One sword in your possession becomes a", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/magic-items/dragon-slayer",
+      children: "Dragon Slayer"
+    }), " ", "or", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/magic-items/giant-slayer",
+      children: "Giant Slayer"
+    }), " ", "(DM’s choice) for the next 9 days. The charm then vanishes from you, and the weapon returns to normal."]
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of Animal Conjuring."
+    })
+  }), /* @__PURE__ */ jsxs("p", {
+    children: ["This charm allows you to cast the", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/conjure-animals",
+      children: "conjure animals"
+    }), " ", "spell (3rd-level version) as an action. Once used three times, the charm vanishes from you."]
+  }), /* @__PURE__ */ jsxs("ol", {
+    children: [/* @__PURE__ */ jsx("li", {
+      children: "Player roll Roll 1d6 to determine CR level"
+    }), /* @__PURE__ */ jsx("li", {
+      children: "Player then rolls a die to discover which creature is summoned"
+    })]
+  }), /* @__PURE__ */ jsx("div", {
+    style: {
+      maxWidth: 800,
+      overflow: "auto",
+      background: "linear-gradient(to right,rgba(0,0,0,0.3), transparent 10%, transparent 90%, rgba(0,0,0,0.3))"
+    },
+    children: /* @__PURE__ */ jsxs("table", {
+      children: [/* @__PURE__ */ jsx("thead", {
+        children: /* @__PURE__ */ jsxs("tr", {
+          children: [/* @__PURE__ */ jsx("th", {
+            children: "1. CR 0"
+          }), /* @__PURE__ */ jsx("th", {
+            children: "2. CR 1/8"
+          }), /* @__PURE__ */ jsx("th", {
+            children: "3. CR 1/4"
+          }), /* @__PURE__ */ jsx("th", {
+            children: "4. CR 1/2"
+          }), /* @__PURE__ */ jsx("th", {
+            children: "5. CR 1"
+          }), /* @__PURE__ */ jsx("th", {
+            children: "6. CR 2"
+          })]
+        })
+      }), /* @__PURE__ */ jsx("tbody", {
+        children: /* @__PURE__ */ jsxs("tr", {
+          children: [/* @__PURE__ */ jsx("td", {
+            children: /* @__PURE__ */ jsxs("ol", {
+              children: [/* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/frog",
+                  children: "Frog"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/baboon",
+                  children: "Baboon"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/baboon",
+                  children: "Badger"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/bat",
+                  children: "Bat"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/cat",
+                  children: "Cat"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/deer",
+                  children: "Deer"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/eagle",
+                  children: "Eagle"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-fire-beetle",
+                  children: "Giant Fire Beetle"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/goat",
+                  children: "Goat"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/hawk",
+                  children: "Hawk"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/hyena",
+                  children: "Hyena"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/jackal",
+                  children: "Jackal"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/lizard",
+                  children: "Lizard"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/owl",
+                  children: "Owl"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/rat",
+                  children: "Rat"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/raven",
+                  children: "Raven"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/scorpion",
+                  children: "Scorpion"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/spider",
+                  children: "Spider"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/vulture",
+                  children: "Vulture"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/weasel",
+                  children: "Weasel"
+                })
+              })]
+            })
+          }), /* @__PURE__ */ jsx("td", {
+            children: /* @__PURE__ */ jsxs("ol", {
+              children: [/* @__PURE__ */ jsx("li", {
+                children: "[re-roll]"
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/blood-hawk",
+                  children: "Blood Hawk"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/camel",
+                  children: "Camel"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/flying-snake",
+                  children: "Flying Snake"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-crab",
+                  children: "Giant Crab"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-rat",
+                  children: "Giant Rat"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-weasel",
+                  children: "Giant Weasel"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/mastiff",
+                  children: "Mastiff"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/mule",
+                  children: "Mule"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/poisonous-snake",
+                  children: "Poisonous Snake"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/pony",
+                  children: "Pony"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/stirge",
+                  children: "Stirge"
+                })
+              })]
+            })
+          }), /* @__PURE__ */ jsx("td", {
+            children: /* @__PURE__ */ jsxs("ol", {
+              children: [/* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/boar",
+                  children: "Boar"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/constrictor-snake",
+                  children: "Constrictor snake"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/elk",
+                  children: "Elk (Raindeer)"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-badger",
+                  children: "Giant Badger"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-bat",
+                  children: "Giant Bat"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-owl",
+                  children: "Giant Owl"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-poisonous-snake",
+                  children: "Giant Poisonous snake"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-wolf-spider",
+                  children: "Giant Wolf Spider"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/panther",
+                  children: "Panther"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/wolf",
+                  children: "Wolf"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/riding-horse",
+                  children: "Riding Horse"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/axe-beak",
+                  children: "Axe Beak"
+                })
+              })]
+            })
+          }), /* @__PURE__ */ jsx("td", {
+            children: /* @__PURE__ */ jsxs("ol", {
+              children: [/* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/ape",
+                  children: "Ape"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/black-bear",
+                  children: "Black Bear"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/crocodile",
+                  children: "Crocodile"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-goat",
+                  children: "Giant Goat"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-wasp",
+                  children: "Giant Wasp"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/warhorse",
+                  children: "Warhorse"
+                })
+              })]
+            })
+          }), /* @__PURE__ */ jsx("td", {
+            children: /* @__PURE__ */ jsxs("ol", {
+              children: [/* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/brown-bear",
+                  children: "Brown bear"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/dire-wolf",
+                  children: "Dire wolf"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-eagle",
+                  children: "Giant Eagle"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-spider",
+                  children: "Giant spider"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-toad",
+                  children: "Giant Toad"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-vulture",
+                  children: "Giant Vulture"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/lion",
+                  children: "Lion"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/tiger",
+                  children: "Tiger"
+                })
+              })]
+            })
+          }), /* @__PURE__ */ jsx("td", {
+            children: /* @__PURE__ */ jsxs("ol", {
+              children: [/* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-boar",
+                  children: "Giant Boar"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-constrictor-snake",
+                  children: "Giant Constrictor snake"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/giant-elk",
+                  children: "Giant Elk"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/polar-bear",
+                  children: "Polar bear"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/rhinoceros",
+                  children: "Rhinoceros"
+                })
+              }), /* @__PURE__ */ jsx("li", {
+                children: /* @__PURE__ */ jsx("a", {
+                  href: "https://www.dndbeyond.com/monsters/saber-toothed-tiger",
+                  children: "Saber-toothed Tiger"
+                })
+              })]
+            })
+          })]
+        })
+      }), /* @__PURE__ */ jsx("tfoot", {
+        children: /* @__PURE__ */ jsxs("tr", {
+          children: [/* @__PURE__ */ jsx("td", {
+            children: "8 beasts"
+          }), /* @__PURE__ */ jsx("td", {
+            children: "8 beasts"
+          }), /* @__PURE__ */ jsx("td", {
+            children: "8 beasts"
+          }), /* @__PURE__ */ jsx("td", {
+            children: "4 beasts"
+          }), /* @__PURE__ */ jsx("td", {
+            children: "2 beasts"
+          }), /* @__PURE__ */ jsx("td", {
+            children: "1 beast"
+          })]
+        })
+      })]
+    })
+  })]
+}), /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "Charm of the Snow Walker."
+    })
+  }), /* @__PURE__ */ jsx("p", {
+    children: "This charm has 3 charges and vanishes when all 3 have been used. As an action, you can expend 1 of the charm’s charges to gain the following benefits for 24 hours:"
+  }), /* @__PURE__ */ jsxs("ul", {
+    children: [/* @__PURE__ */ jsx("li", {
+      children: "You and your allies within 15 feet of you ignore difficult terrain caused by snow or ice."
+    }), /* @__PURE__ */ jsx("li", {
+      children: "You can see through areas heavily obscured by snow to a distance of 60 feet."
+    }), /* @__PURE__ */ jsx("li", {
+      children: "You gain resistance to cold damage. If you are already resistant, you gain immunity to cold damage instead."
+    })]
+  })]
+})];
+
 // build/assets/data/other/itemBreakage.js
 var itemBreakage = [
   "A magic item becomes frozen (unusable until thawed)",
@@ -10028,6 +10584,281 @@ var weather = [{
 // build/assets/data/weather/weatherDuration.js
 var weatherDuration = ["1 hour", "2 hours", "3 hours", "4 hours", "5 hours", "6 hours", "7 hours", "8 hours"];
 
+// build/assets/data/wild-magic/divineNat20.js
+var Character = " The creature that triggered the divine burst ";
+var character = " the creature that triggered the divine burst ";
+var divineNat20 = [{
+  roll: [1, 6],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["Golden light fills a 20-foot-radius, 40-foot-high cylinder centered on one character in the region and then fades. That character and their friends in the cylinder gain the benefits of the", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/divine-favor",
+      children: "divine favor"
+    }), " ", "spell for 1 hour."]
+  })
+}, {
+  roll: [7, 12],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["Radiant energy erupts in a 10-foot-radius sphere centered on ", character, ". Each creature in the sphere that isn’t undead regains 3d6 hit points. Each undead creature in the sphere takes 3d6 radiant damage."]
+  })
+}, {
+  roll: [13, 18],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["Creatures in a 30ft radius around ", character, " can suddenly start understanding all languages for 1 hour."]
+  })
+}, {
+  roll: [19, 24],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: [Character, " gains advantage on saving throws for the next 24 hours."]
+  })
+}, {
+  roll: [25, 30],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: [Character, " is suffused with celestial power. For 1 minute, the character’s melee attacks deal an extra 2d6 radiant damage on a hit."]
+  })
+}, {
+  roll: [31, 36],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["One simple or martial weapon that is nonmagical and carried by", " ", character, " gains the properties of a", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/magic-items/mace-of-disruption",
+      children: "Mace of Disruption"
+    }), " ", "for 24 hours."]
+  })
+}, {
+  roll: [37, 42],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["A", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/monsters/flying-sword",
+      children: "flying sword made of light"
+    }), " ", "appears next to ", character, " under their control. The sword can be controlled using a bonus action. The sword deals radiant damage instead of slashing damage. The sword vanishes after 1 minute."]
+  })
+}, {
+  roll: [43, 48],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: [Character, " hears whispers from celestial beings or refrains of celestial choirs. The character can ask those voices one question as if using the ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/commune",
+      children: "Commune"
+    }), " ", "spell."]
+  })
+}, {
+  roll: [49, 54],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["All creatures in a 30ft radius of ", character, " give off a crimson glow for 1 minute. The creatures shed dim light in a 10-foot radius, attacks against them have advantage if the attacker can see them, and the creatures can’t benefit from being invisible."]
+  })
+}, {
+  roll: [55, 60],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["Celestial power explodes in a 30-foot-radius sphere of divine light centered on ", character, ". Each creature in the sphere must make a DC 15 Constitution saving throw. On a failure, the creature takes 4d6 radiant damage and is blinded. On a success, it takes half damage and isn’t blinded."]
+  })
+}, {
+  roll: [61, 66],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: [Character, " feels a profound sense of purpose and gains the benefit of the ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/bless",
+      children: "Bless"
+    }), " spell for 1 minute. They can choose two other creatures they can see to gain the spell’s benefits as well."]
+  })
+}, {
+  roll: [67, 72],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["A booming voice thunders in Celestial and can be heard throughout the region. Each creature within 100ft of ", character, " must make a DC 15 Constitution saving throw. On a success, the creature gains 2d10 temporary hit points. On a failure, the creature is deafened for 1 minute."]
+  })
+}, {
+  roll: [73, 78],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: [Character, " hands begin to glow with divine bower and gains the ability to cure afflictions for 1 hour. As an action, they can cast lesser restoration or greater restoration without expending a spell slot and requiring no material components."]
+  })
+}, {
+  roll: [79, 84],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["If V (or selune follower) Twilight Sanctuary activates. Else An area 30ft around ", character, " becomes filled with bright light that is not extinguished by the darkness spell."]
+  })
+}, {
+  roll: [85, 90],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["An angelic voice rings throughout the region. Each creature within 60ft of ", character, " must succeed on a DC 15 Wisdom saving throw or perform the grovel option of the command spell."]
+  })
+}, {
+  roll: [91, 95],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: [Character, " gains immunity to cold damage for 24 hours."]
+  })
+}, {
+  roll: [96, 100],
+  value: /* @__PURE__ */ jsxs(Fragment, {
+    children: [Character, " gains the ability to use the", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/sources/phb/classes#DivineIntervention",
+      children: "Divine Intervention"
+    }), " ", "cleric feature for 7 days. It succeeds automatically when used. The character can only use the feature granted in this way only once. Reroll if you’ve already rolled this effect."]
+  })
+}];
+
+// build/assets/data/wild-magic/wildMagicSurge.js
+var Surge = ({
+  good,
+  bad,
+  neutral
+}) => /* @__PURE__ */ jsxs(Fragment, {
+  children: [/* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "1-5 (Bad):"
+    })
+  }), " ", /* @__PURE__ */ jsx("p", {
+    children: bad
+  }), /* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "6-15 (Neutral):"
+    })
+  }), " ", /* @__PURE__ */ jsx("p", {
+    children: neutral
+  }), /* @__PURE__ */ jsx("p", {
+    children: /* @__PURE__ */ jsx("strong", {
+      children: "16-20 (Good):"
+    })
+  }), " ", /* @__PURE__ */ jsx("p", {
+    children: good
+  })]
+});
+var wildMagicSurge = [/* @__PURE__ */ jsx(Surge, {
+  good: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["You ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/polymorph",
+      children: "Polymorph"
+    }), " ", "into an", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/monsters/adult-white-dragon",
+      children: "Adult White Dragon"
+    }), ". You don't return to your normal form until 24 hours have elapsed or your HP drops to 0."]
+  }),
+  neutral: /* @__PURE__ */ jsx(Fragment, {
+    children: "You turn into an white dragonborn and can only speak draconic and barely understand common for 24 hours."
+  }),
+  bad: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["You ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/polymorph",
+      children: "Polymorph"
+    }), " ", "into a primal rage filled", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/monsters/adult-white-dragon",
+      children: "Adult White Dragon"
+    }), ". You attack the nearest creature to you (including allies) every turn for as long as you are berserk. Make a DC 18 WIS save at the start of each of your turns to gain control over yourself, losing berserk. You don't return to your normal form until 24 hours have elapsed or your HP drops to 0."]
+  })
+}), /* @__PURE__ */ jsx(Surge, {
+  good: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["A talking ethereal", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/monsters/dire-wolf",
+      children: "Dire Wolf"
+    }), " ", "animal companion appears. You can summon, dismiss or command this creature using a bonus action. The creature disappears, never to return, when it reaches 0 HP."]
+  }),
+  neutral: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["A talking spectral", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/monsters/wolf",
+      children: "dog"
+    }), " that only you can see appears."]
+  }),
+  bad: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["You ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/polymorph",
+      children: "Polymorph"
+    }), " ", "into a dog."]
+  })
+}), /* @__PURE__ */ jsx(Surge, {
+  good: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["Gain the druid", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/sources/phb/classes#WildShape",
+      children: "Wild Shape"
+    }), " ", "feature for 24 hours."]
+  }),
+  neutral: /* @__PURE__ */ jsx(Fragment, {
+    children: "You take on properties of an arctic creature (roll on the creature roll table) for 24 hours."
+  }),
+  bad: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["You ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/polymorph",
+      children: "Polymorph"
+    }), " ", 'into a CR 0 creature (see Chawinga Charms "Charm of Animal Conjuring" roll table result).']
+  })
+}), /* @__PURE__ */ jsx(Surge, {
+  good: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, gain resistance to cold damage. You also grow gills on the side of your neck allowing you to breath underwater."
+  }),
+  neutral: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["For 24 hours, you turn into a", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/monsters/deep-scion",
+      children: "Deep Scion"
+    }), " ", "with resistance to cold damage."]
+  }),
+  bad: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["For 24 hours, you turn into a", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/monsters/troglodyte",
+      children: "Troglodyte"
+    }), ". Your stench aura extends out to 20ft."]
+  })
+}), /* @__PURE__ */ jsx(Surge, {
+  good: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, you gain +2 AC as large segments of your skin turns into a hardened metal. Your body weight doubles but this does not effect encumbrance."
+  }),
+  neutral: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, the appearance of your skin looks metallic."
+  }),
+  bad: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, you transform into a metal statue of yourself, during which time you are considered petrified."
+  })
+}), /* @__PURE__ */ jsx(Surge, {
+  good: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, you grow black raven wings out of your back and gain a fly speed of 40ft."
+  }),
+  neutral: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, you grow black feathers all over your body."
+  }),
+  bad: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["You Polymorph into a", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/monsters/raven",
+      children: "Raven"
+    })]
+  })
+}), /* @__PURE__ */ jsx(Surge, {
+  good: /* @__PURE__ */ jsx(Fragment, {
+    children: "3d6 x 100 silver pieces appear randomly around you over the next hour."
+  }),
+  neutral: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, every non living thing that you touch directly with your skin turns to gold. It turns back to normal when your ability expires."
+  }),
+  bad: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, everything you touch directly with your skin (including living creatures) turns to rusted copper. It turns back to normal when your ability expires. Living things that are transformed are considered petrified."
+  })
+}), /* @__PURE__ */ jsx(Surge, {
+  good: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, you grow gills on your neck allowing you to breath under water. You also gain resistance to cold damage."
+  }),
+  neutral: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, you grow gills on your neck allowing you to breath under water."
+  }),
+  bad: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, you grow gills on your neck allowing you to breath under water. However you are no longer able to breath air for as long as you have these gills. You have resistance to cold damage while underwater."
+  })
+}), /* @__PURE__ */ jsx(Surge, {
+  good: /* @__PURE__ */ jsxs(Fragment, {
+    children: ["You trigger the effects of the", " ", /* @__PURE__ */ jsx("a", {
+      href: "https://www.dndbeyond.com/spells/time-stop",
+      children: "Time Stop"
+    }), " Spell"]
+  }),
+  neutral: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, every so often you will freeze in place for a few seconds as if frozen in time... no mechanics to this, just RP."
+  }),
+  bad: /* @__PURE__ */ jsx(Fragment, {
+    children: "You are frozen in time (stunned), make a DC 18 WIS save every round until you succeed to unfreeze yourself."
+  })
+}), /* @__PURE__ */ jsx(Surge, {
+  good: /* @__PURE__ */ jsx(Fragment, {
+    children: "You grow thick calusses all over your body. For 24 hours, you have resistance to slashing and piercing damage."
+  }),
+  neutral: /* @__PURE__ */ jsx(Fragment, {
+    children: "For 24 hours, your skin thickens and you gain the “Unarmored Defense Feat”. If you already have this, then increase AC by +1."
+  }),
+  bad: /* @__PURE__ */ jsx(Fragment, {
+    children: "Your skin thins. For 24 hours, you are vulnerable to slashing and piercing damage."
+  })
+})];
+
 // build/assets/App.js
 function App() {
   return /* @__PURE__ */ jsx("div", {
@@ -10101,6 +10932,16 @@ function App() {
             dSize: "d12"
           })]
         }), /* @__PURE__ */ jsxs(RollTableSet, {
+          heading: "Wild magic surges",
+          children: [/* @__PURE__ */ jsx(RollResult, {
+            label: "Wild Magic Surge (nat 1 when casting magic)",
+            tableData: wildMagicSurge
+          }), /* @__PURE__ */ jsx(RollResult, {
+            label: "Divine burst (divine nat 20)",
+            tableData: divineNat20,
+            dSize: "d100"
+          })]
+        }), /* @__PURE__ */ jsxs(RollTableSet, {
           heading: "Weather & Storms",
           children: [/* @__PURE__ */ jsx(RollResult, {
             label: "Weather",
@@ -10118,6 +10959,9 @@ function App() {
         }), /* @__PURE__ */ jsxs(RollTableSet, {
           heading: "Other aspects",
           children: [/* @__PURE__ */ jsx(RollResult, {
+            label: "Chawinga Charms",
+            tableData: chawingaCharms
+          }), /* @__PURE__ */ jsx(RollResult, {
             label: "Item breakage",
             tableData: itemBreakage,
             dSize: "d10"
