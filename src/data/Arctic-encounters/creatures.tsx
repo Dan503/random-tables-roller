@@ -1,3 +1,4 @@
+import React from 'react'
 import type { ReactNode } from 'react'
 
 export const creatures: Array<ReactNode> = [
