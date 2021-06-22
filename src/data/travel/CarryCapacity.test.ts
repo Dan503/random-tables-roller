@@ -1,6 +1,7 @@
 import { expect } from 'chai'
 import { CarryCapacity, generateCarryCapacity } from './CarryCapacity'
 
+// TODO: Since switching to Vite, the tests can't be run anymore :(
 describe('1 creature', () => {
 	test('20 strength - large - no sled', () => {
 		const expectation: CarryCapacity = {

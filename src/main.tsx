@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
-import { render } from 'react-dom'
-import App from './App'
+import ReactDOM from 'react-dom'
 import './index.css'
+import App from './App'
 
-render(
+ReactDOM.render(
 	<StrictMode>
 		<App />
 	</StrictMode>,
