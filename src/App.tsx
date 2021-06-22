@@ -19,6 +19,7 @@ import {
 	townEncounters,
 } from './data/Predefined-Encounters'
 import { storms, weather, weatherDuration } from './data/weather'
+import { divineNat20 } from './data/wild-magic'
 import type { Roll } from './utils/utilTypes'
 
 function App() {
@@ -84,6 +85,14 @@ function App() {
 							label="Activity (Humanoid)"
 							tableData={activityHumanoid}
 							dSize={'d12'}
+						/>
+					</RollTableSet>
+
+					<RollTableSet heading="Wild magic surges">
+						<RollResult<ReactNode>
+							label="Divine burst (divine nat 20)"
+							tableData={divineNat20}
+							dSize="d100"
 						/>
 					</RollTableSet>
 
