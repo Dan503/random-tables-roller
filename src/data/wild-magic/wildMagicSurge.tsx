@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface SurgeProps {
 	good: JSX.Element
 	bad: JSX.Element

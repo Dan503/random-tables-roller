@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { getResult, isRollObject, maxRolls } from '../../utils/utilFunctions'
 import type { diceName, Roll, RollRow } from '../../utils/utilTypes'
 import './RollResult.css'

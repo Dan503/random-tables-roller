@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import type { CarryCapacity } from '../../data/travel/CarryCapacity'
 import {
 	creatureData,

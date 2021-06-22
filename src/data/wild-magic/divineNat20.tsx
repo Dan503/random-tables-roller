@@ -1,4 +1,3 @@
-import React from 'react'
 import type { RollTableData } from 'src/utils/utilTypes'
 
 const Character = ' The creature that triggered the divine burst '

@@ -1,4 +1,3 @@
-import React from 'react'
 import type { ReactNode } from 'react'
 import './App.css'
 import { FlexGap } from './components/FlexGap/FlexGap'
