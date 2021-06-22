@@ -10,8 +10,7 @@ import {
 	creatures,
 } from './data/Arctic-encounters'
 import { age, personality, quirks, races, sex } from './data/npcs'
-import { curses } from './data/other'
-import { itemBreakage } from './data/other/itemBreakage'
+import { chawingaCharms, curses, itemBreakage } from './data/other'
 import {
 	dangerousTravelEncounters,
 	safeTravelEncounters,
@@ -107,6 +106,7 @@ function App() {
 					</RollTableSet>
 
 					<RollTableSet heading="Other aspects">
+						<RollResult label="Chawinga Charms" tableData={chawingaCharms} />
 						<RollResult
 							label="Item breakage"
 							tableData={itemBreakage}
