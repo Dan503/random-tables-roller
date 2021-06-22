@@ -10,7 +10,8 @@ export default defineConfig({
 		// Adds React import so that we don't have to manually write the import in all our files
 		jsxInject: `import React from 'react'`
 	},
+	base: '/random-tables-roller/',
 	build: {
-		outDir: 'docs'
+		outDir: 'docs',
 	}
 })
