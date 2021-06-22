@@ -1,0 +1,5 @@
+export { age } from './age'
+export { personality } from './personality'
+export { quirks } from './quirks'
+export { races } from './races'
+export { sex } from './sex'
