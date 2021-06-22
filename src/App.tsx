@@ -18,7 +18,7 @@ import {
 	townEncounters,
 } from './data/Predefined-Encounters'
 import { storms, weather, weatherDuration } from './data/weather'
-import { divineNat20 } from './data/wild-magic'
+import { divineNat20, wildMagicSurge } from './data/wild-magic'
 import type { Roll } from './utils/utilTypes'
 
 function App() {
@@ -88,6 +88,10 @@ function App() {
 					</RollTableSet>
 
 					<RollTableSet heading="Wild magic surges">
+						<RollResult<ReactNode>
+							label="Wild Magic Surge (nat 1 when casting magic)"
+							tableData={wildMagicSurge}
+						/>
 						<RollResult<ReactNode>
 							label="Divine burst (divine nat 20)"
 							tableData={divineNat20}
