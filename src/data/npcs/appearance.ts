@@ -42,21 +42,33 @@ export const height = [
 
 export const weight: RollTableData = [
 	{
-		roll: [1, 25],
+		roll: 1,
+		value: 'anorexic'
+	},
+	{
+		roll: [2, 24],
 		value: 'thin'
 	},
 	{
-		roll: [26, 75],
+		roll: [25, 49],
+		value: 'slender'
+	},
+	{
+		roll: [50, 75],
 		value: 'of average weight'
 	},
 	{
 		roll: [76, 95],
-		value: 'overweight'
+		value: 'a bit overweight'
 	},
 	{
 		roll: [96, 100],
 		value: 'obese'
-	}
+	},
+	{
+		roll: 100,
+		value: 'morbidly obese'
+	},
 ]
 
 export const attractiveness: RollTableData<d10> = [
