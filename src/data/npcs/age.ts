@@ -12,7 +12,7 @@ export const age: RollTableData = [
 	},
 	{
 		roll: [6, 25],
-		value: 'Teenager',
+		value: 'Teenage',
 	},
 	{
 		roll: [26, 55],
