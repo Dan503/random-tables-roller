@@ -86,6 +86,13 @@ function App() {
 
 					<RollTableSet heading="Pre-defined encounters">
 						<RollResult
+							label="Any travel encounter"
+							tableData={[
+								...dangerousTravelEncounters,
+								...safeTravelEncounters,
+							]}
+						/>
+						<RollResult
 							label="Dangerous travel encounters"
 							tableData={dangerousTravelEncounters}
 						/>
