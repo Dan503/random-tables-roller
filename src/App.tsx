@@ -9,7 +9,18 @@ import {
 	activityHumanoid,
 	creatures,
 } from './data/Arctic-encounters'
-import { age, personality, quirks, races, sex } from './data/npcs'
+import {
+	age,
+	attractiveness,
+	eye,
+	hair,
+	height,
+	personality,
+	quirks,
+	races,
+	sex,
+	weight,
+} from './data/npcs'
 import { chawingaCharms, curses, itemBreakage } from './data/other'
 import {
 	dangerousTravelEncounters,
@@ -28,24 +39,49 @@ function App() {
 				<h1>Random Table Rollers</h1>
 				<FlexGap direction="vertical">
 					<TravelCalculator />
-					<RollTableSet heading="NPC Characters">
-						<RollResult<Roll> label="Race" tableData={races} dSize={'d100'} />
-						<RollResult<Roll> label="Sex" tableData={sex} dSize={'d4'} />
+
+					<RollTableSet heading="NPC appearance">
 						<tr>
-							<td colSpan={5}>
-								<p>
-									Use the "Fantasy Name Generator" app to generate character
-									names.
-								</p>
-							</td>
+							<td colSpan={5}>You meet a...</td>
 						</tr>
+						<RollResult label="Age (appearance)" tableData={age} dSize="d100" />
+						<RollResult label="Sex" tableData={sex} />
+						<RollResult label="Race" tableData={races} dSize="d100" />
+						<tr>
+							<td colSpan={5}>who is...</td>
+						</tr>
+						<RollResult label="Height" tableData={height} />
+						<tr>
+							<td colSpan={5}>and</td>
+						</tr>
+						<RollResult label="Weight" tableData={weight} dSize="d100" />
+
+						<tr>
+							<td colSpan={5}>with...</td>
+						</tr>
+						<RollResult label="Hair length" tableData={hair.length} />
+						<RollResult label="Hair color" tableData={hair.color} />
+						<tr>
+							<td colSpan={5}>hair and...</td>
+						</tr>
+						<RollResult label="Eye color" tableData={eye.color} />
+						<tr>
+							<td colSpan={5}>eyes who is...</td>
+						</tr>
+						<RollResult
+							label="Attractiveness"
+							tableData={attractiveness}
+							dSize="d10"
+						/>
+					</RollTableSet>
+
+					<RollTableSet heading="NPC Personality">
 						<RollResult
 							label="Personality trait"
 							tableData={personality}
 							dSize={'d100'}
 						/>
 						<RollResult label="Quirk" tableData={quirks} dSize={'d100'} />
-						<RollResult label="Age (appearance)" tableData={age} dSize="d100" />
 					</RollTableSet>
 
 					<RollTableSet heading="Pre-defined encounters">

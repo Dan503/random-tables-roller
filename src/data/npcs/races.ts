@@ -22,12 +22,16 @@ export const races: RollTableData<d100> = [
 		value: 'Triton',
 	},
 	{
-		roll: [91, 95],
+		roll: [91, 92],
 		value: 'Halfling',
 	},
 	{
-		roll: 96,
+		roll: [93, 94],
 		value: 'Gnome',
+	},
+	{
+		roll: [95, 96],
+		value: 'Tabaxi',
 	},
 	{
 		roll: 97,
