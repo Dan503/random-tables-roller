@@ -28,9 +28,9 @@ import {
 	tavernEncounters,
 	townEncounters,
 } from './data/Predefined-Encounters'
+import { Terrain, Landmarks } from './data/travel/Terrain'
 import { storms, weather, weatherDuration } from './data/weather'
 import { divineNat20, wildMagicSurge } from './data/wild-magic'
-import type { Roll } from './utils/utilTypes'
 
 function App() {
 	return (
@@ -84,7 +84,9 @@ function App() {
 						<RollResult label="Quirk" tableData={quirks} dSize={'d100'} />
 					</RollTableSet>
 
-					<RollTableSet heading="Pre-defined encounters">
+					<RollTableSet heading="Travel and encounters">
+						<RollResult label="Terrain" tableData={Terrain} dSize="d20" />
+						<RollResult label="Landmark" tableData={Landmarks} />
 						<RollResult
 							label="Any travel encounter"
 							tableData={[

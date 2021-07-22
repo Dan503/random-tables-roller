@@ -65,34 +65,14 @@ export const dangerousTravelEncounters = [
 	// 31
 	'1d6 worth of food rations become inedible for each party member',
 	// 32
-	'Everyone makes a Constitution saving throw or gets “the cold” (poisoned condition) for one full day (unless healed/ treated?)',
+	'Everyone makes a Frost Check or gets “the cold” (poisoned condition) for one full day (unless healed/ treated?)',
 	// 33
 	'A woman needing help lures PC’s into a trap (Hag? Shes being forced to do it?)',
 	// 34
 	'An abandoned wagon off to the side (Supplies inside? It’s a trap?!)',
-	// 35
-	`corpses of dead animals partially burried in a strange fashion are arranged from smallest to largest (human size creature looks to be next?)`,
-	// 36
-	`Ice castle with frozen blood and frozen solid bodies (lair of "The Spine Demon" (Abominable Yeti)?)`,
-	// 37
-	'Massive flying creature / bird / dragon flies overhead',
-	// 38
-	`Boulder sits in the middle of the snow, it looks as if it fell or was thrown (Ogres near?)`,
-	// 39
-	`Sharp spires of Chardalyn extend out of the ground forming a jagged wasteland (Lair to a Chardalyn Dragon?)`,
-	// 40
-	'Skelleton of a huge creature sticks out of the ground forming a large canopy (safety or a creatures lair?)',
-	// 41
-	`You find a large cavern face with dark blood across it,	inside you find a singular white scaled egg... Where is the mother? What is this creature? (White dragon?)`,
 ]
 
 export const safeTravelEncounters = [
-	// 1
-	'A mile wide frozen lake with one gigantic creature frozen inside',
-	// 2
-	'A mile wide frozen lake with bodies frozen inside',
-	// 3
-	'A massive block of ice with a dangerous creature frozen	inside',
 	// 4
 	'A family of 4 huddled together... frozen to death',
 	// 5
@@ -103,8 +83,6 @@ export const safeTravelEncounters = [
 	'A 50ft tall statue of a dwarf. It is holding his hand up as if to forbid travelers from coming this way',
 	// 8
 	'A tiny island in the middle of a large frigid water lake (Whats on the island? Is the lake frozen?',
-	// 9
-	'A massive block of ice with a gentle creature frozen inside',
 	// 10
 	`Another adventuring group passes them by exchanging
 	a casual greeting from the forest being too dangerous,
@@ -149,15 +127,9 @@ export const safeTravelEncounters = [
 	// 27
 	'A person offering help towards where the party is going',
 	// 28
-	'A traveling cartographer roams the area and will help guide the party to their destination for a price',
-	// 29
 	'A cleric decked out in Cold Weather Gear offers to aid wandering adventurers (Cures stacks of exhaustion?)',
-	// 30
+	// 29
 	'You see the “Diving Seals Club” currently swimming in nearby ice water... they are crazy!',
-	// 31
-	'A hot spring or some kind of thermal vent warms a small body of water',
-	// 32
-	'An adventurer frozen in a block of ice with a magic item on them',
-	// 33
-	'Find a magical item buried in the snow / trapped in ice',
+	// 30
+	'A traveling cartographer roams the area and will help guide the party to their destination for a price',
 ]
