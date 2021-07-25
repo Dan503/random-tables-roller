@@ -28,7 +28,11 @@ import {
 	tavernEncounters,
 	townEncounters,
 } from './data/Predefined-Encounters'
-import { Terrain, Landmarks } from './data/travel/Terrain'
+import {
+	WildernessTerrain,
+	Landmarks,
+	MountainousTerrain,
+} from './data/travel/Terrain'
 import { storms, weather, weatherDuration } from './data/weather'
 import { divineNat20, wildMagicSurge } from './data/wild-magic'
 
@@ -83,7 +87,16 @@ function App() {
 					</RollTableSet>
 
 					<RollTableSet heading="Travel and encounters">
-						<RollResult label="Terrain" tableData={Terrain} dSize="d20" />
+						<RollResult
+							label="Wilderness Terrain"
+							tableData={WildernessTerrain}
+							dSize="d20"
+						/>
+						<RollResult
+							label="Mountainous Terrain"
+							tableData={MountainousTerrain}
+							dSize="d20"
+						/>
 						<RollResult label="Landmark" tableData={Landmarks} />
 						<RollResult
 							label="Any travel encounter"

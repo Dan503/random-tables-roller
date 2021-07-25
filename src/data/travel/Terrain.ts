@@ -1,53 +1,89 @@
 import { d20, RollTableData } from "src/utils/utilTypes";
 
-export const Terrain: RollTableData<d20> = [
+export const WildernessTerrain: RollTableData<d20> = [
 	{
 		roll: 1,
-		value: 'Cave (Enter or take a travel fail to go around)'
+		value: 'Cave (Enter for shortcut or take a fail to go around)'
 	},
 	{
-		roll: 2,
-		value: 'Chasm'
+		roll: [2, 3],
+		value: 'Jagged rocks (DC 14)'
 	},
 	{
-		roll: 3,
-		value: 'Cliff face'
-	},
-	{
-		roll: 4,
-		value: 'Frozen river'
-	},
-	{
-		roll: 5,
-		value: 'Frozen stream'
+		roll: [4, 5],
+		value: 'Slippery ice (DC 13)'
 	},
 	{
 		roll: [6, 7],
-		value: 'Slippery ice'
+		value: 'Thick shrubbery & thistles (DC 13)'
 	},
 	{
-		roll: [8, 9],
-		value: 'Thick shrubbery & thistles'
+		roll: 8,
+		value: 'Frozen river (DC 13)'
 	},
 	{
-		roll: [10, 11],
-		value: 'Deep waist high snow'
+		roll: 9,
+		value: 'Frozen stream (DC 12)'
 	},
 	{
-		roll: [12, 13],
-		value: 'Jagged rocks'
+		roll: 10,
+		value: 'Thick Forrest (DC 12)'
+	},
+	{
+		roll: [11, 13],
+		value: 'Waist high snow (DC 11)'
 	},
 	{
 		roll: [14, 15],
-		value: 'Loose rocks'
+		value: 'Loose rocks (DC 10)'
 	},
 	{
 		roll: [16, 17],
-		value: 'Forrest'
+		value: 'Forrest (DC 10)'
 	},
 	{
 		roll: [18, 19],
-		value: 'Open plains (Advantage?)'
+		value: 'Open plains (DC 8)'
+	},
+	{
+		roll: 20,
+		value: 'Roll on Landmark Table'
+	}
+]
+
+
+export const MountainousTerrain: RollTableData<d20> = [
+	{
+		roll: 1,
+		value: 'Cave (Enter for shortcut or take a fail to go around)'
+	},
+	{
+		roll: [2, 3],
+		value: 'Chasm (DC 18)'
+	},
+	{
+		roll: [4, 6],
+		value: 'Cliff face (DC 15)'
+	},
+	{
+		roll: [7, 9],
+		value: 'Jagged rocks (DC 14)'
+	},
+	{
+		roll: [10, 13],
+		value: 'Slippery ice (DC 13)'
+	},
+	{
+		roll: [14, 15],
+		value: 'Frozen stream (DC 12)'
+	},
+	{
+		roll: [16, 17],
+		value: 'Waist high snow (DC 11)'
+	},
+	{
+		roll: [18, 19],
+		value: 'Loose rocks (DC 10)'
 	},
 	{
 		roll: 20,
