@@ -38,8 +38,6 @@ function App() {
 			<div className="App-inner">
 				<h1>Random Table Rollers</h1>
 				<FlexGap direction="vertical">
-					<TravelCalculator />
-
 					<RollTableSet heading="NPC appearance">
 						<tr>
 							<td colSpan={5}>You meet a...</td>
@@ -163,6 +161,9 @@ function App() {
 						/>
 						<RollResult label="Curses" tableData={curses} dSize="d100" />
 					</RollTableSet>
+
+					{/* This is overcomplicated, just have mounts go twice as fast */}
+					<TravelCalculator />
 
 					<p>
 						Personality traits and Quirks from{' '}
