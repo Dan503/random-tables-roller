@@ -18,15 +18,11 @@ export const WildernessTerrain: RollTableData<d20> = [
 		value: 'Thick shrubbery & thistles (DC 13)'
 	},
 	{
-		roll: 7,
-		value: 'Frozen river (DC 13)'
-	},
-	{
-		roll: [8, 9],
+		roll: [7, 8],
 		value: 'Thick Forrest (DC 12)'
 	},
 	{
-		roll: [10, 11],
+		roll: [9, 11],
 		value: 'Waist high snow (DC 11)'
 	},
 	{
@@ -39,7 +35,7 @@ export const WildernessTerrain: RollTableData<d20> = [
 	},
 	{
 		roll: [16, 17],
-		value: 'Frozen stream (DC 10)'
+		value: 'Frozen stream 15ft across (DC 10)'
 	},
 	{
 		roll: [18, 19],
@@ -51,38 +47,43 @@ export const WildernessTerrain: RollTableData<d20> = [
 	}
 ]
 
+// Mountainous terrain has +2 DC to checks that are also in Wilderness table
 export const MountainousTerrain: RollTableData<d20> = [
 	{
 		roll: 1,
 		value: 'Cave (Enter for shortcut or take a fail to go around)'
 	},
 	{
-		roll: [2, 3],
+		roll: 2,
 		value: 'Chasm (DC 18)'
 	},
 	{
-		roll: [4, 6],
-		value: 'Cliff face (DC 15)'
+		roll: [3, 4],
+		value: 'Ascend cliff face (DC 17)'
+	},
+	{
+		roll: [5, 6],
+		value: 'Descend cliff face (DC 17)'
 	},
 	{
 		roll: [7, 9],
-		value: 'Jagged rocks (DC 14)'
+		value: 'Jagged rocks (DC 16)'
 	},
 	{
 		roll: [10, 13],
-		value: 'Slippery ice (DC 13)'
+		value: 'Slippery ice (DC 15)'
 	},
 	{
 		roll: [14, 15],
-		value: 'Waist high snow (DC 11)'
+		value: 'Waist high snow (DC 13)'
 	},
 	{
 		roll: [16, 17],
-		value: 'Frozen stream (DC 10)'
+		value: 'Frozen stream 15ft across (DC 12)'
 	},
 	{
 		roll: [18, 19],
-		value: 'Loose rocks (DC 10)'
+		value: 'Loose rocks (DC 12)'
 	},
 	{
 		roll: 20,
