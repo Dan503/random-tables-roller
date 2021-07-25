@@ -6,40 +6,40 @@ export const WildernessTerrain: RollTableData<d20> = [
 		value: 'Cave (Enter for shortcut or take a fail to go around)'
 	},
 	{
-		roll: [2, 3],
+		roll: 2,
 		value: 'Jagged rocks (DC 14)'
 	},
 	{
-		roll: [4, 5],
+		roll: [3, 4],
 		value: 'Slippery ice (DC 13)'
 	},
 	{
-		roll: [6, 7],
+		roll: [5, 6],
 		value: 'Thick shrubbery & thistles (DC 13)'
 	},
 	{
-		roll: 8,
+		roll: 7,
 		value: 'Frozen river (DC 13)'
 	},
 	{
-		roll: 9,
-		value: 'Frozen stream (DC 12)'
-	},
-	{
-		roll: 10,
+		roll: [8, 9],
 		value: 'Thick Forrest (DC 12)'
 	},
 	{
-		roll: [11, 13],
+		roll: [10, 11],
 		value: 'Waist high snow (DC 11)'
 	},
 	{
-		roll: [14, 15],
+		roll: [12, 13],
 		value: 'Loose rocks (DC 10)'
 	},
 	{
-		roll: [16, 17],
+		roll: [14, 15],
 		value: 'Forrest (DC 10)'
+	},
+	{
+		roll: [16, 17],
+		value: 'Frozen stream (DC 10)'
 	},
 	{
 		roll: [18, 19],
@@ -50,7 +50,6 @@ export const WildernessTerrain: RollTableData<d20> = [
 		value: 'Roll on Landmark Table'
 	}
 ]
-
 
 export const MountainousTerrain: RollTableData<d20> = [
 	{
@@ -75,11 +74,11 @@ export const MountainousTerrain: RollTableData<d20> = [
 	},
 	{
 		roll: [14, 15],
-		value: 'Frozen stream (DC 12)'
+		value: 'Waist high snow (DC 11)'
 	},
 	{
 		roll: [16, 17],
-		value: 'Waist high snow (DC 11)'
+		value: 'Frozen stream (DC 10)'
 	},
 	{
 		roll: [18, 19],
