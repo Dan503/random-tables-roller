@@ -359,6 +359,16 @@ export const chawingaCharms = [
 	</>,
 	<>
 		<p>
+			<strong>Charm of benevolent wild magic.</strong>
+		</p>
+		<p>
+			This charm has 3 charges. As an action, you can expend 1 of the charm’s
+			charges to immediately trigger a wild magic surge. Only good effects will
+			be used.
+		</p>
+	</>,
+	<>
+		<p>
 			<strong>Charm of Vitality.</strong>
 		</p>
 		<p>
