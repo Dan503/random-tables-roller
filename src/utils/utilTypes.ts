@@ -142,8 +142,8 @@ export type diceName = 'd100' | 'd20' | 'd12' | 'd10' | 'd8' | 'd6' | 'd4'
 export interface Roll<dSize = d100> {
 	/** Single Number or a Min and Max range for a the die roll */
 	roll: dSize | [dSize, dSize]
-	/** The result for when this number is rolled */
-	value: ReactNode
+	/** The result for when this number is rolled, passing a function will recalculate the value on every render */
+	value: ReactNode | ((value?: any) => ReactNode)
 	actualRoll?: dSize
 }
 

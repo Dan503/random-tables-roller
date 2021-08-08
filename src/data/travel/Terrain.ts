@@ -1,4 +1,5 @@
-import { d20, RollTableData } from "src/utils/utilTypes";
+import { roll } from "../../utils/utilFunctions"
+import { d20, RollTableData } from "src/utils/utilTypes"
 
 export const WildernessTerrain: RollTableData<d20> = [
 	{
@@ -35,7 +36,7 @@ export const WildernessTerrain: RollTableData<d20> = [
 	},
 	{
 		roll: [16, 17],
-		value: 'Frozen stream 15ft across (DC 10)'
+		value: () => `Frozen river/stream ${roll(50)}ft across`
 	},
 	{
 		roll: [18, 19],
@@ -79,7 +80,7 @@ export const MountainousTerrain: RollTableData<d20> = [
 	},
 	{
 		roll: [16, 17],
-		value: 'Frozen stream 15ft across (DC 12)'
+		value: () => `Frozen river/stream ${roll(50)}ft across`
 	},
 	{
 		roll: [18, 19],

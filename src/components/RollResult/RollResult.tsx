@@ -19,6 +19,11 @@ const critClass = (
 	return maxRoll === diceResult ? 'crit crit-success' : ''
 }
 
+const getValue = (result?: Roll) =>
+	typeof result?.value === 'function'
+		? result.value(result?.actualRoll)
+		: result?.value
+
 export const RollResult = <T extends RollRow>({
 	label,
 	tableData,
@@ -48,7 +53,7 @@ export const RollResult = <T extends RollRow>({
 						</span>
 					)}
 				</td>
-				<td>{result?.value}</td>
+				<td>{getValue(result)}</td>
 				<td>
 					<button onClick={handleRoll}>Roll</button>
 				</td>
@@ -73,7 +78,7 @@ export const RollResult = <T extends RollRow>({
 							<tbody>
 								{tableData.map((row: T, index) => {
 									if (isRollObject(row)) {
-										const { value, roll } = row as Roll
+										const { roll } = row as Roll
 										const number = Array.isArray(roll)
 											? `${roll[0]} - ${roll[1]}`
 											: roll
@@ -81,7 +86,7 @@ export const RollResult = <T extends RollRow>({
 										return (
 											<tr key={number}>
 												<th align="right">{number}</th>
-												<td align="left">{value}</td>
+												<td align="left">{getValue(row as Roll)}</td>
 											</tr>
 										)
 									} else {
