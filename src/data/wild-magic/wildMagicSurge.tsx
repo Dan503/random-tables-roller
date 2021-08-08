@@ -221,7 +221,7 @@ export const wildMagicSurge = [
 	<Surge
 		good={
 			<>
-				You grow thick calusses all over your body. For 24 hours, you have
+				You grow thick calluses all over your body. For 24 hours, you have
 				resistance to slashing and piercing damage.
 			</>
 		}
@@ -237,5 +237,478 @@ export const wildMagicSurge = [
 				piercing damage.
 			</>
 		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, You gain the ability to change the color of your skin,
+				hair, and eyes at will.
+			</>
+		}
+		neutral={<>For the next hour, you are the opposite gender.</>}
+		bad={<>All of your hair falls out.</>}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, You gain the ability to speak with animals and cast the{' '}
+				<a href="https://www.dndbeyond.com/spells/beast-bond">Beast Bond</a>{' '}
+				spell for free.
+			</>
+		}
+		neutral={
+			<>
+				You grow antlers, fur, horns, or some other beastly feature for 24
+				hours.
+			</>
+		}
+		bad={
+			<>
+				You <a href="https://www.dndbeyond.com/spells/polymorph">Polymorph</a>{' '}
+				into the nearest creature or the last creature you have seen for 24
+				hours.
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you grow a prehensile monkey tail that can function like
+				another hand. Once per turn, it can interact with any object as a free
+				action. You can't use it to attack.
+			</>
+		}
+		neutral={<>You grow a monkey tail that you can't control for 24 hours.</>}
+		bad={
+			<>
+				You turn into a common{' '}
+				<a href="https://www.dndbeyond.com/monsters/flying-monkey">monkey</a>{' '}
+				for 24 hours.
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				Swap 2 ability scores that would be the best possible meaningful stat
+				swap for the target (Str and Con for V) for 24 hours. You can't swap
+				stat scores that have the same modifier.
+			</>
+		}
+		neutral={
+			<>
+				Swap 2 ability scores that would be the funniest possible stat swap for
+				the target (Cha and Con for V) for 24 hours. You can't swap stat scores
+				that have the same modifier.
+			</>
+		}
+		bad={
+			<>
+				Swap 2 ability scores that would be the worst possible stat swap for the
+				target (Wis and Int for V) for 24 hours. You can't swap stat scores that
+				have the same modifier.
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you gain the ability to cast any spell from any class as
+				long as you have the spell slots for it.
+			</>
+		}
+		neutral={
+			<>For 24 hours, you gain access to a cantrip of the players choosing.</>
+		}
+		bad={
+			<>
+				For 24 hours, every time you attack with a weapon or cast a spell; take
+				1d4 Force damage.
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you are able to use the{' '}
+				<a href="https://www.dndbeyond.com/sources/basic-rules/classes#BardicInspiration">
+					Bardic Inspiration
+				</a>{' '}
+				class feature.
+			</>
+		}
+		neutral={
+			<>
+				The next ally you speak to gains the{' '}
+				<a href="https://www.dndbeyond.com/spells/bless">Bless</a> effect for 24
+				hours.
+			</>
+		}
+		bad={
+			<>
+				The next ally you speak to gains the{' '}
+				<a href="https://www.dndbeyond.com/spells/bane">Bane</a> effect for 24
+				hours.
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you gain +10 Movement Speed and triple your jump distance.
+			</>
+		}
+		neutral={
+			<>
+				For 24 hours, you weigh 1/10 of your normal weight and are constantly
+				under the effect of the{' '}
+				<a href="https://www.dndbeyond.com/spells/feather-fall">Feather Fall</a>{' '}
+				spell.
+			</>
+		}
+		bad={
+			<>
+				For 24 hours, you lose 10 Movement Speed and triple in weight density
+				(cant jump or fly).
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				You get a surge of Adrenaline, gain one use of the{' '}
+				<a href="https://www.dndbeyond.com/sources/basic-rules/classes#ActionSurge">
+					action surge
+				</a>{' '}
+				ability. This ability expires at the end of your next long rest.
+			</>
+		}
+		neutral={
+			<>
+				For 24 hours, you understand how to use ALL weapons and have an urge to
+				use a different one each time you fight.
+			</>
+		}
+		bad={<>You gain 1 level of exhaustion.</>}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you gain the{' '}
+				<a href="https://www.dndbeyond.com/sources/basic-rules/monsters#Truesight">
+					True Sight
+				</a>{' '}
+				ability to a range of 60 feet.
+			</>
+		}
+		neutral={
+			<>
+				For 24 hours, you gain the ability of echolocation (
+				<a href="https://www.dndbeyond.com/sources/basic-rules/monsters#Blindsight">
+					Blind Sight
+				</a>
+				).
+			</>
+		}
+		bad={<>You go blind for 24 hours.</>}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you can now speak telepathically to anyone within 60ft in
+				a language that you know.
+			</>
+		}
+		neutral={
+			<>For 24 hours, you must shout at your loudest volume when you speak.</>
+		}
+		bad={<>For 24 hours, you cannot speak, only bubbles come out.</>}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you gain a keen sense of smell. You gain{' '}
+				<a href="https://www.dndbeyond.com/sources/basic-rules/monsters#Blindsight">
+					Blind Sight
+				</a>{' '}
+				with a radius of 10 feet, have advantage on all sent based Perception
+				checks and you gain the ability to track down familiar creatures and
+				objects by following their scent.
+			</>
+		}
+		neutral={<>For 24 hours, you lose the ability to smell / taste.</>}
+		bad={
+			<>
+				For 24 hours, you are surrounded by a disgusting odor. You gain
+				disadvantage on all Charisma checks, and scent based stealth checks.
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you are constantly under the effects of the{' '}
+				<a href="https://www.dndbeyond.com/spells/haste">Haste</a> spell.
+			</>
+		}
+		neutral={
+			<>
+				<p>
+					For 24 hours, randomly switch between normal, Slow, and Haste spell
+					effects on your body. At the start of your turn in combat, roll 1d4 to
+					determine the effect. When out of combat, roll 1d4 at the start of
+					every hour instead.
+				</p>
+
+				<p>
+					(1 = <a href="https://www.dndbeyond.com/spells/slow">Slow</a>; 2-3 =
+					normal; 4 = <a href="https://www.dndbeyond.com/spells/haste">Haste</a>
+					)
+				</p>
+			</>
+		}
+		bad={
+			<>
+				For 24 hours, you are constantly under the effects of the{' '}
+				<a href="https://www.dndbeyond.com/spells/slow">Slow</a> spell.
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				You feel a strong sense of confidence in your abilities. You permanently
+				gain a proficiency level in the next non-expertise skill/tool check that
+				you attempt to do.
+			</>
+		}
+		neutral={
+			<>
+				For 24 hours, you gain a proficiency level in the next non-expertise
+				skill/tool check that you attempt to do.
+			</>
+		}
+		bad={
+			<>
+				For 24 hours, You LOSE proficiency in the next proficient skill check
+				you make (not casting spells or making attacks).
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				You give off an inspiring aura. For 24 hours, all allies within 20ft of
+				you gain +2 to attack and damage rolls on any melee weapon / spell
+				attack they make.
+			</>
+		}
+		neutral={
+			<>
+				You give off a divine aura. For 24 hours, all allies within 20ft of you
+				have the <a href="https://www.dndbeyond.com/spells/bless">Bless</a>{' '}
+				effect applied to them.
+			</>
+		}
+		bad={
+			<>
+				<p>
+					You give off a dreadful aura. For 24 hours, all allies within 20ft of
+					you make a Wisdom save at the start of their turn or gain the{' '}
+					<a href="https://www.dndbeyond.com/spells/bane">Bane</a> effect for
+					that round of combat.
+				</p>
+				<p>Wis save DC = spell casting DC or 10 if not a caster.</p>
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you gain the ability to see through walls and solid
+				objects out to a range of 15 ft.
+			</>
+		}
+		neutral={
+			<>
+				For 24 hours, your normal vision is replaced with heat vision. You have
+				(
+				<a href="https://www.dndbeyond.com/sources/basic-rules/monsters#Blindsight">
+					Blind Sight
+				</a>{' '}
+				to 20ft but you are not able to see in colour, make out fine detail or
+				read printed text.
+			</>
+		}
+		bad={
+			<>
+				For 24 hours, you can only see non living things (all living things are
+				invisible to you)
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				You IMMEDIATELY gain the effects of a long rest and for 24 hours your
+				next long and short rests require half the amount of time as normal to
+				gain the full benefits.
+			</>
+		}
+		neutral={
+			<>
+				You start to get extremely drowsy and have small narcoleptic flare ups.
+				Basically you fall asleep randomly. (no mechanical punishments, just RP)
+			</>
+		}
+		bad={
+			<>
+				<p>
+					A 30-foot cube{' '}
+					<a href="https://www.dndbeyond.com/spells/hypnotic-pattern">
+						Hypnotic Pattern
+					</a>{' '}
+					appears with you at the center. All creatures within the pattern must
+					succeed on a Wisdom saving throw or fall asleep for 1 minute or until
+					they take damage.
+				</p>
+				<p>Wis save DC = spell casting DC or 10 if not a caster.</p>
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you get a +2 modifier in one of your highest ability
+				scores (Player choice).
+			</>
+		}
+		neutral={
+			<>
+				Gain a permanent +1 modifier to one ability score and a permanent -1
+				modifier to another. Roll a d20 to determine what skills are affected.
+			</>
+		}
+		bad={
+			<>
+				For 24 hours, you get a -2 modifier in one of your highest ability
+				scores (DM choice).
+			</>
+		}
+	/>,
+	<Surge
+		good={<>For 24 hours, you gain a fly speed of 30ft.</>}
+		neutral={
+			<>
+				For 24 hours, you can levitate up to 10ft high, but no farther. You have
+				a fly speed of 10ft when levitating.
+			</>
+		}
+		bad={
+			<>
+				You gain a fly speed of 30ft, if you are ever higher than 30ft off the
+				ground (eg. over a large fall) you immediately and permanently lose this
+				ability.
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you grow one size category larger (You are under the spell
+				effect{' '}
+				<a href="https://www.dndbeyond.com/spells/enlarge-reduce">Enlarge</a>).
+			</>
+		}
+		neutral={
+			<>You permanently grow 1ft taller or 1ft shorter (Player choice).</>
+		}
+		bad={
+			<>
+				For 24 hours, you shrink by one size category (You are under the spell
+				effect{' '}
+				<a href="https://www.dndbeyond.com/spells/enlarge-reduce">Reduce</a>).
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, you movement speed is doubled and you can dash as a Bonus
+				Action.
+			</>
+		}
+		neutral={
+			<>
+				For 24 hours, you must move at full speed any time you move anywhere
+				(always sprinting)
+			</>
+		}
+		bad={
+			<>
+				For 24 hours, your body becomes obese (gain over 100lbs) and your
+				movement speed is halved.
+			</>
+		}
+	/>,
+	<Surge
+		good={<>For 24 hours, add +2 Str Modifier.</>}
+		neutral={
+			<>
+				For 24 hours, your muscles swell and grow looking FAR more defined. (No
+				mechanical effects, just RP).
+			</>
+		}
+		bad={<>For 24 hours, subtract -2 Str Modifier.</>}
+	/>,
+	<Surge
+		good={<>For 24 hours, add +2 Dex Modifier.</>}
+		neutral={
+			<>
+				For 24 hours, you are clumsy, constantly tripping / dropping things. (No
+				mechanical effects, just RP).
+			</>
+		}
+		bad={<>For 24 hours, subtract -2 Dex Modifier.</>}
+	/>,
+	<Surge
+		good={<>For 24 hours, add +2 Con Modifier.</>}
+		neutral={
+			<>
+				For 24 hours, everything hurts when it touches you. (No mechanical
+				effects, just RP).
+			</>
+		}
+		bad={<>For 24 hours, subtract -2 Con Modifier.</>}
+	/>,
+	<Surge
+		good={<>For 24 hours, add +2 Int Modifier.</>}
+		neutral={
+			<>
+				For 24 hours, you can no longer read / write / do math or even count.
+				(No mechanical effects, just RP).
+			</>
+		}
+		bad={<>For 24 hours, subtract -2 Int Modifier.</>}
+	/>,
+	<Surge
+		good={<>For 24 hours, add +2 Wis Modifier.</>}
+		neutral={
+			<>
+				For 24 hours, you 100% believe anything you are told. (No mechanical
+				effects, just RP).
+			</>
+		}
+		bad={<>For 24 hours, subtract -2 Wis Modifier.</>}
+	/>,
+	<Surge
+		good={<>For 24 hours, add +2 Char Modifier.</>}
+		neutral={
+			<>
+				For 24 hours, you become irresistibly attractive. (No mechanical
+				effects, just RP).
+			</>
+		}
+		bad={<>For 24 hours, subtract -2 Char Modifier.</>}
 	/>,
 ]
