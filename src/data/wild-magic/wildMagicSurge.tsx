@@ -238,6 +238,9 @@ export const wildMagicSurge = [
 			</>
 		}
 	/>,
+	/* ---------------- *\
+		Transmutation
+	\* ----------------*/
 	<Surge
 		good={
 			<>
@@ -710,5 +713,119 @@ export const wildMagicSurge = [
 			</>
 		}
 		bad={<>For 24 hours, subtract -2 Char Modifier.</>}
+	/>,
+	/* ---------------- *\
+		Evocation
+	\* ----------------*/
+	<Surge
+		good={
+			<>
+				<p>
+					A small glowing red and yellow marble appears in your hand. It is
+					quite light, it pulses slowly, and it seems very fragile. (
+					<a href="https://www.dndbeyond.com/spells/delayed-blast-fireball">
+						Delayed Blast Fireball spell
+					</a>
+					)
+				</p>
+				<p>
+					If you throw the marble at a target, drop it, or damage it in any way,
+					the marble will explode dealing 12d6 fire damage in a 20ft sphere. DC
+					15 dex save to halve the damage. The marble will not explode or
+					disappear until damaged.
+				</p>
+			</>
+		}
+		neutral={
+			<>
+				The next flammable item you touch, that you aren’t currently wearing or
+				carrying, bursts into flame.
+			</>
+		}
+		bad={
+			<>
+				A Fireball Spell Explodes centered on self: 20ft radius DC15 Dex save
+				6d6 damage.
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				For 24 hours, You can control a fire aura. You can turn it on or off at
+				will. While it is active, it deals 1d6 fire damage every 6 seconds to
+				any creature within 5ft of you. You are also resistant to fire damage
+				while it is active.
+			</>
+		}
+		neutral={
+			<>
+				You immediately catch on Fire. You take 1d6 fire damage at the start of
+				your turn each round for 1 minute or until you or a companion has spent
+				an action dousing the flames.
+			</>
+		}
+		bad={
+			<>
+				<p>
+					A 15ft radius circular wall of fire rises up from the ground around
+					you with you at the center. Any creature in any of the spaces covered
+					by this fire must immediately make a DC 15 Dex saving throw or take
+					3d6 fire damage.
+				</p>
+				<p>
+					The ring of fire lasts for 1 hour. Any attempt to move through the
+					flames deals 3d6 fire damage with a DC 15 acrobatics check to halve
+					the damage.
+				</p>
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				A strong Gale forms. All creatures within 30ft of you make a Strength
+				Save or get pulled/pushed towards you (whichever would be BETTER for the
+				players)
+			</>
+		}
+		neutral={
+			<>
+				A gentle gust of wind blows outward from you. All creatures within 40
+				feet of you can feel it, but it otherwise does nothing.
+			</>
+		}
+		bad={
+			<>
+				A strong Gale forms. All creatures within 30ft of you make a Strength
+				Save or get pulled/pushed towards you (whichever would be WORSE for the
+				players)
+			</>
+		}
+	/>,
+	<Surge
+		good={
+			<>
+				You get one opportunity to cast{' '}
+				<a href="https://www.dndbeyond.com/spells/call-lightning">
+					Call Lightning
+				</a>{' '}
+				for Free as an Action. No expiration date.
+			</>
+		}
+		neutral={
+			<>
+				You see the occasional flash of lightning flicker around you. Creatures
+				you touch feel a nasty static electric shock. For 24 hours, any creature
+				you touch takes 1d4 lightning damage.
+			</>
+		}
+		bad={
+			<>
+				A loud boom emanates from you. All creatures within 15 feet take 2d8
+				thunder damage and must make a DC 15 Constitution saving throw or be
+				deafened for 24 hours.
+			</>
+		}
 	/>,
 ]
