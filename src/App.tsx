@@ -21,6 +21,7 @@ import {
 	sex,
 	weight,
 } from './data/npcs'
+import { attitude, voiceEffects, voiceStyle } from './data/npcs/voice'
 import { chawingaCharms, curses, itemBreakage } from './data/other'
 import {
 	dangerousTravelEncounters,
@@ -42,6 +43,15 @@ function App() {
 			<div className="App-inner">
 				<h1>Random Table Rollers</h1>
 				<FlexGap direction="vertical">
+					<RollTableSet heading="NPC voice">
+						<RollResult label="Voice style" tableData={voiceStyle} />
+						<RollResult
+							label="Voice effect"
+							tableData={voiceEffects}
+							dSize="d100"
+						/>
+						<RollResult label="Attitude" tableData={attitude} />
+					</RollTableSet>
 					<RollTableSet heading="NPC appearance">
 						<tr>
 							<td colSpan={5}>You meet a...</td>
